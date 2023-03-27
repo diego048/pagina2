@@ -112,7 +112,7 @@
                     align="center"
                     class="flex d-flex align-self-stretch"
                     >
-                       <v-card elevation="21" v-bind="props" style="width: 100%"  @click="showDialog(card)" style="width: 100%"  v-scrolls>
+                       <v-card elevation="21" style="width: 100%"  @click="showDialog(card)" v-scrolls>
                               <v-img :src="card.src" height="200px"></v-img> 
                                     <div style="background-color: #F7F7F7">    
                                     <v-card-title
