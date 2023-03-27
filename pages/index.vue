@@ -125,7 +125,90 @@
                                     <br />
                                     </div> 
                                 </v-card>
-                        <dibox v-show="card.show" @close="hideDialog(card)">
+                        
+                    </v-col>
+                </v-row>
+                <br />
+                <br />
+                <div align="center">
+                    <v-btn class="boton" to="/productos" height="50px">
+                        APRETA PARA VER TODO LOS PRODUCTOS
+                    </v-btn>
+                </div>
+            </v-container>
+            <br />
+            <br />
+        </div>
+        <br />
+            <!--cuadros de eventos-->
+        <div style="position: relative" v-scrolls>
+            <div id="circle3" style="background: rgba(173, 216, 230, 0.5); left: 20px"></div>
+            <div id="circle3" style="background: rgba(10, 76, 176, 0.5); left: 30px; top: 20px"></div>
+            <v-container>
+                <v-row>
+                    <v-col cols="12" sm="6" md="6" style="position: relative">
+                        <h1 align="center" style="color: #1A2A33">
+                            EVENTOS
+                        </h1>
+                        <p align="justify">
+                            El mundo siempre esta en pleno cambio, por eso nosotros nos enfocamos en brindar 
+                            un servicio unico para que nuestros clientes nunca pierdan la confianza en nosotros
+                        </p>
+                        <br />
+                        <div align="center">
+                            <v-btn to="/eventos" class="boton" height="40px">
+                                MÁS INFORMACIÓN
+                            </v-btn>
+                        </div>
+                        <div id="circle4" style="right: 20px; bottom: 40px"></div>
+                        <div id="circle4" style="right: 50px; bottom: 40px"></div>
+                        <div id="circle4" style="right: 35px; bottom: 15px"></div>
+                    </v-col>
+                    <v-col cols="12" sm="6" md="6">
+                        <v-img
+                            height="300"
+                            :src="ima7"
+                            cover
+                        ></v-img>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </div>
+        <!--formulario-->
+        <div id="formulario" style="background: linear-gradient(0.32turn, #101D64, rgba(10,146,176,0.81));">
+            <br />
+            <h1 style="color: white" align="center" v-scrolls>CONTACTANOS</h1>
+            <v-container style="color: white" v-scrolls>
+                <v-row>
+                    <v-col cols="12" sm="6" md="6">
+                        <br />
+                        <h3>
+                            RUC: 20602907067
+                            <br />
+                            <br />
+                            Calle Cantuarias N° 160 Of. 505 - Miraflores -Lima.
+                            <br />
+                            <br />
+                            (01) 5918989
+                            <br />
+                            <br />
+                            comercial.rspharma@gmail.com
+                            <br />
+                            <br />
+                            ventas@rspharmaperu.com
+                        </h3>
+                    </v-col>
+                    <v-col cols="12" sm="6" md="6" class="register">
+                        <input type="text" placeholder="Nombre" />
+                        <input type="text" placeholder="E-mail" />
+                        <textarea type="text" rows="6" placeholder="Mensaje"></textarea>
+                        <button>Enviar</button>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </div>
+        <div v-for="card for cards">
+            <dibox v-show="card.show" @close="hideDialog(card)">
                                                             <div class="d-flex justify-space-between">
                                     <v-card-title class="d-flex justify-end">
                                         {{ card.title }}
@@ -536,86 +619,6 @@
                                     </div>
                                 </div>
                         </dibox>
-                    </v-col>
-                </v-row>
-                <br />
-                <br />
-                <div align="center">
-                    <v-btn class="boton" to="/productos" height="50px">
-                        APRETA PARA VER TODO LOS PRODUCTOS
-                    </v-btn>
-                </div>
-            </v-container>
-            <br />
-            <br />
-        </div>
-        <br />
-            <!--cuadros de eventos-->
-        <div style="position: relative" v-scrolls>
-            <div id="circle3" style="background: rgba(173, 216, 230, 0.5); left: 20px"></div>
-            <div id="circle3" style="background: rgba(10, 76, 176, 0.5); left: 30px; top: 20px"></div>
-            <v-container>
-                <v-row>
-                    <v-col cols="12" sm="6" md="6" style="position: relative">
-                        <h1 align="center" style="color: #1A2A33">
-                            EVENTOS
-                        </h1>
-                        <p align="justify">
-                            El mundo siempre esta en pleno cambio, por eso nosotros nos enfocamos en brindar 
-                            un servicio unico para que nuestros clientes nunca pierdan la confianza en nosotros
-                        </p>
-                        <br />
-                        <div align="center">
-                            <v-btn to="/eventos" class="boton" height="40px">
-                                MÁS INFORMACIÓN
-                            </v-btn>
-                        </div>
-                        <div id="circle4" style="right: 20px; bottom: 40px"></div>
-                        <div id="circle4" style="right: 50px; bottom: 40px"></div>
-                        <div id="circle4" style="right: 35px; bottom: 15px"></div>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="6">
-                        <v-img
-                            height="300"
-                            :src="ima7"
-                            cover
-                        ></v-img>
-                    </v-col>
-                </v-row>
-            </v-container>
-        </div>
-        <!--formulario-->
-        <div id="formulario" style="background: linear-gradient(0.32turn, #101D64, rgba(10,146,176,0.81));">
-            <br />
-            <h1 style="color: white" align="center" v-scrolls>CONTACTANOS</h1>
-            <v-container style="color: white" v-scrolls>
-                <v-row>
-                    <v-col cols="12" sm="6" md="6">
-                        <br />
-                        <h3>
-                            RUC: 20602907067
-                            <br />
-                            <br />
-                            Calle Cantuarias N° 160 Of. 505 - Miraflores -Lima.
-                            <br />
-                            <br />
-                            (01) 5918989
-                            <br />
-                            <br />
-                            comercial.rspharma@gmail.com
-                            <br />
-                            <br />
-                            ventas@rspharmaperu.com
-                        </h3>
-                    </v-col>
-                    <v-col cols="12" sm="6" md="6" class="register">
-                        <input type="text" placeholder="Nombre" />
-                        <input type="text" placeholder="E-mail" />
-                        <textarea type="text" rows="6" placeholder="Mensaje"></textarea>
-                        <button>Enviar</button>
-                    </v-col>
-                </v-row>
-            </v-container>
         </div>
     </div>
 </template>
