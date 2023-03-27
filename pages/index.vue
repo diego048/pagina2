@@ -207,7 +207,7 @@
                 </v-row>
             </v-container>
         </div>
-        <div v-for="card for cards" :key="card.id">
+        <div v-for="card in cards" :key="card.id">
             <dibox v-show="card.show" @close="hideDialog(card)">
                                                             <div class="d-flex justify-space-between">
                                     <v-card-title class="d-flex justify-end">
