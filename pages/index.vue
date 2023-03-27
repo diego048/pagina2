@@ -112,10 +112,8 @@
                     align="center"
                     class="flex d-flex align-self-stretch"
                     >
-                        <v-dialog scrollable v-model="card.show">
-                            <template v-slot:activator="{ props }">
-                                <v-card elevation="21" v-bind="props" style="width: 100%">
-                                    <v-img :src="card.src" height="200px"></v-img> 
+                       <v-card elevation="21" v-bind="props" style="width: 100%"  @click="showDialog(card)" style="width: 100%"  v-scrolls>
+                              <v-img :src="card.src" height="200px"></v-img> 
                                     <div style="background-color: #F7F7F7">    
                                     <v-card-title
                                         class="text-pre-wrap"
@@ -127,8 +125,7 @@
                                     <br />
                                     </div> 
                                 </v-card>
-                            </template>
-                            <v-card>
+                        <dibox v-show="card.show" @close="hideDialog(card)">
                                 <div class="d-flex justify-space-between">
                                     <v-card-title class="d-flex justify-end">
                                         {{ card.title }}
@@ -138,14 +135,14 @@
                                         <v-btn
                                             style="color: rgb(203, 50, 52)"
                                             variant="text"
-                                            @click="card.show = false"
+                                            @click="hideDialog(card)"
                                         >
                                             <h1>X</h1>
                                         </v-btn>
                                     </v-card-actions>
                                 </div>
                                 <v-divider></v-divider>
-                                <v-card-text align="justify" class="text-pre-wrap">
+                                <div align="justify" class="text-pre-wrap">
                                     <div v-show="card.show1">
                                         <v-row>
                                             <v-col cols="12" sm="6" md="6">
@@ -537,9 +534,8 @@
                                         </v-row>
                                         <v-img :src="ima11" style="width: 100%"></v-img>
                                     </div>
-                                </v-card-text>
-                            </v-card>
-                        </v-dialog>
+                                </div>
+                        </dibox>
                     </v-col>
                 </v-row>
                 <br />
@@ -642,9 +638,34 @@ import imag15 from "../assets/imagen18.jpg"
 import imag16 from "../assets/imagen22.jpg"
 import imag17 from "../assets/imagen23.jpg"
 export default {
+    unmounted(){
+        document.body.style.position = 'static';
+        document.body.style.top = '';
+        document.body.style.width = '';
+        document.body.style.overflowY = '';
+        window.scrollTo(0, this.scrollPosition);
+    },
     beforeMount(){
       this.activador = true
     },
+     methods: {
+        showDialog(card) {
+            this.scrollPosition = window.pageYOffset;
+            (card.show) = true;
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${this.scrollPosition}px`;
+            document.body.style.width = '100%';
+            document.body.style.overflowY = 'hidden';
+        },
+        hideDialog(card) {
+            (card.show) = false;
+            document.body.style.position = 'static';
+            document.body.style.top = '';
+            document.body.style.width = '';
+            document.body.style.overflowY = '';
+            window.scrollTo(0, this.scrollPosition);
+        }
+    }
     data() {
       return {
         activador: false,
