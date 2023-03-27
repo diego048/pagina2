@@ -33,9 +33,7 @@
                 class="flex d-flex align-self-stretch"
                 v-scrolls
                 >
-                    <v-dialog scrollable v-model="card.show" v-if="activador">
-                        <template v-slot:activator="{ props }">
-                            <v-card elevation="21" v-bind="props" style="width: 100%">
+                <v-card  @click="showDialog(card)" elevation="21" align="center" style="width: 100%"  v-scrolls>
                                 <v-img :src="card.src" height="200px" style="background-color: #F1F1F1"></v-img>      
                                 <v-card-title
                                     class="text-pre-wrap"
@@ -50,7 +48,56 @@
                                     {{card.info}}
                                 </v-card-subtitle>
                             </v-card>
-                        </template>
+                </v-col>
+            </v-row>
+        </v-container>
+        <br />
+        <div style="background: linear-gradient(0.3turn, #101D64, rgba(10,146,176,0.81));">
+            <v-container v-scrolls>
+                <v-row>
+                    <v-col class="d-flex justify-space-between">
+                        <v-btn style="
+                                    background: white;
+                                    color: black"
+                                    @click="showDialog1()"
+                                >
+                                    NUESTROS PRODUCTOS
+                                </v-btn>
+                        <h1 style="color: white">LISTA DE PRODUCTOS</h1>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </div>
+        <v-container>
+            <br />
+            <v-row class="d-flex" height="100">
+                <v-col
+                cols="12"
+                sm="6"
+                :md="card.flex1"
+                v-for="card in cards1"
+                :key="card.id"
+                align="center"
+                class="flex d-flex align-self-stretch"
+                v-scrolls
+                >
+                    <v-card  @click="showDialog(card)" elevation="21" align="center" style="width: 100%"  v-scrolls>
+                                <v-img :src="card.src" height="200px" style="background-color: #F1F1F1"></v-img>      
+                                <v-card-title
+                                    class="text-pre-wrap"
+                                    style="word-break: break-word"
+                                >
+                                    {{ card.title }}
+                                </v-card-title>
+                                <v-card-subtitle> {{card.info}} </v-card-subtitle>
+                            </v-card>
+                </v-col>
+            </v-row>
+        </v-container>
+        <br />
+        <div v-for="card in cards" :key="card.id">
+            <dibox v-show="card.show" @close="hideDialog(card)">
+                        
                         <v-card>
                             <div class="d-flex justify-space-between text-pre-wrap">
                                 <div>
@@ -62,7 +109,7 @@
                                     <v-btn
                                         style="color: rgb(203, 50, 52)"
                                         variant="text"
-                                        @click="card.show = false"
+                                        @click="hideDialog(card)"
                                     >
                                         <h1>X</h1>
                                     </v-btn>
@@ -948,176 +995,10 @@
                             </v-btn>
                             <br />
                         </v-card>
-                    </v-dialog>
-                </v-col>
-            </v-row>
-        </v-container>
-        <br />
-        <div style="background: linear-gradient(0.3turn, #101D64, rgba(10,146,176,0.81));">
-            <v-container v-scrolls>
-                <v-row>
-                    <v-col class="d-flex justify-space-between">
-                        <h1 style="color: white">LISTA DE PRODUCTOS</h1>
-                        <v-dialog scrollable v-model="model1" v-if="activador">
-                            <template v-slot:activator="{ props }">
-                                <v-btn style="
-                                    background: white;
-                                    color: black"
-                                    v-bind="props"
-                                >
-                                    NUESTROS PRODUCTOS
-                                </v-btn>
-                            </template>
-                            <v-card>
-                                <div class="d-flex justify-space-between">
-                                    <v-card-title class="d-flex justify-end">
-                                        LISTA DE PRODUCTOS
-                                    </v-card-title>
-                                    <v-card-actions class="d-flex justify-start">
-                                        <v-btn
-                                            style="color: rgb(203, 50, 52)"
-                                            variant="text"
-                                            @click="model1 = false"
-                                        >
-                                            <h1>X</h1>
-                                        </v-btn>
-                                    </v-card-actions>
-                                </div>
-                                <v-divider></v-divider>
-                                <v-card-text class="text-pre-wrap">
-                                <v-row>
-                                    <v-col cols="12" sm="12" md="12">
-                                        <p style="color: #083545">
-                                            ESPARADRAPO HIPOALERGÉNICO DE TELA 2.5 cm X 9.1 m - CAJA X 12 ROLLOS.
-                                            <br />
-                                            <br />
-                                            ESPARADRAPO HIPOALERGÉNICO DE PAPEL 2.5 cm X 9.1 m - CAJA X 12 ROLLOS.
-                                            <br />
-                                            <br />
-                                            ESPARADRAPO ANTIALÉRGICO PLASTIFICADO 2.5 cm X 9.1 m - CAJA X 12 ROLLOS.
-                                            <br />
-                                            <br />
-                                            ESPARADRAPO HIPOALERGÉNICO DE TELA 5 cm X 9.1 m - CAJA X 06 ROLLOS.
-                                            <br />
-                                            <br />
-                                            ESPARADRAPO HIPOALERGÉNICO DE PAPEL 5 cm X 9.1 m - CAJA X 06 ROLLOS.
-                                            <br />
-                                            <br />
-                                            ESPARADRAPO ANTIALÉRGICO PLASTIFICADO 5 cm X 9.1 m - CAJA X 06 ROLLOS.
-                                            <br />
-                                            <br />
-                                            ESPARADRAPO HIPOALERGÉNICO DE TELA 7.5 cm X 9.1 m - CAJA X 04 ROLLOS.
-                                            <br />
-                                            <br />
-                                            ESPARADRAPO HIPOALERGÉNICO DE PAPEL 7.5 cm X 9.1 m - CAJA X 04 ROLLOS.
-                                            <br />
-                                            <br />
-                                            ESPARADRAPO ANTIALÉRGICO PLASTIFICADO 7.5 cm X 9.1 m - CAJA X 04 ROLLOS.
-                                            <br />
-                                            <br />
-                                            ESPARADRAPO HIPOALERGÉNICO DE TELA - CAJA X 08 ROLLOS (04 rollos de 2.5 cm X 9.1 m y 04 rollos de 5 cm X 9.1 m).
-                                            <br />
-                                            <br />
-                                            PROTECTOR CUTANEO HEXAMETILDISILOXANO+TERPOLIMERO ACRILATO+POLIFENILMETILSILOXANO AEROSOL 28 mL - FRASCO.
-                                            <br />
-                                            <br />
-                                            PROTECTOR CUTANEO HEXAMETILDISILOXANO+TERPOLIMERO ACRILATO+POLIFENILMETILSILOXANO X 1 mL.
-                                            <br />
-                                            <br />
-                                            APOSITO TRANSPARENTE ADHESIVO 4.4 cm X 4.4 cm - CAJA X 100 UND.
-                                            <br />
-                                            <br />
-                                            APOSITO TRANSPARENTE ADHESIVO 6 cm X 7 cm - CAJA X 100 UND.
-                                            <br />
-                                            <br />
-                                            APOSITO TRANSPARENTE ADHESIVO 10 cm X 12 cm - CAJA X 50 UND.	
-                                            <br />
-                                            <br />
-                                            APOSITO TRANSPARENTE ADHESIVO 15 cm X 20 cm - CAJA X 10 UND.
-                                            <br />
-                                            <br />
-                                            APÓSITO TRANSPARENTE CON GLUCONATO DE CLORHEXIDINA 7 cm X 8.5 cm - CAJA X 25 UND.
-                                            <br />
-                                            <br />
-                                            APÓSITO TRANSPARENTE CON GLUCONATO DE CLORHEXIDINA 8.5 cm X 11.5 cm - CAJA X 25 UND. - CAJA X 25 SACHETS.
-                                            <br />
-                                            <br />
-                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 3.8 cm X 4.5 cm - CAJA X 100 UND.
-                                            <br />
-                                            <br />
-                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 7 cm X 8 cm - CAJA X 100 UND.
-                                            <br />
-                                            <br />
-                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 5 cm X 5.7 cm - CAJA X 100 UND.
-                                            <br />
-                                            <br />
-                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 6.5 cm X 7 cm - CAJA X 100 UND.
-                                            <br />
-                                            <br />
-                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 8.5 cm X 11.5 cm - CAJA X 50 UND.
-                                            <br />
-                                            <br />
-                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 10 cm X 12 cm - CAJA X 50 UND.
-                                            <br />
-                                            <br />
-                                            MANTA TÉRMICA PARA CUERPO ENTERO 91 cm X 2.13 m APROX.
-                                            <br />
-                                            <br />
-                                            MANTA TERMICA PEDIATRICA 91 cm X 1.52 m.
-                                            <br />
-                                            <br />
-                                            MANTA TÉRMICA PARA EXTREMIDADES INFERIORES 91 cm X 1.52 m APROX.
-                                            <br />
-                                            <br />
-                                            MANTA TERMICA PEDIATRICA 1.52 m X 81 cm.
-                                            <br />
-                                            <br />
-                                            MANTA TERMICA PEDIATRICA 91 cm X 84 cm.
-                                            <br />
-                                            <br />
-                                            MANTA TÉRMICA PARA EXTREMIDADES SUPERIORES 61 cm X 1.98 m
-                                            <br />
-                                            <br />
-                                            MANTA TÉRMICA DE CUERPO ENTERO 91 cm X 2.21 m.
-                                            <br />
-                                            <br />
-                                            RESPIRADOR QUIRURGICO TIPO N95.
-                                        </p>
-                                    </v-col>
-                                </v-row>
-                                </v-card-text>
-                            </v-card>
-                        </v-dialog>
-                    </v-col>
-                </v-row>
-            </v-container>
+            </dibox>
         </div>
-        <v-container>
-            <br />
-            <v-row class="d-flex" height="100">
-                <v-col
-                cols="12"
-                sm="6"
-                :md="card.flex1"
-                v-for="card in cards1"
-                :key="card.id"
-                align="center"
-                class="flex d-flex align-self-stretch"
-                v-scrolls
-                >
-                    <v-dialog scrollable v-model="card.show" v-if="activador">
-                        <template v-slot:activator="{ props }">
-                            <v-card elevation="21" v-bind="props" style="width: 100%">
-                                <v-img :src="card.src" height="200px" style="background-color: #F1F1F1"></v-img>      
-                                <v-card-title
-                                    class="text-pre-wrap"
-                                    style="word-break: break-word"
-                                >
-                                    {{ card.title }}
-                                </v-card-title>
-                                <v-card-subtitle> {{card.info}} </v-card-subtitle>
-                            </v-card>
-                        </template>
+        <div v-for="card in cards1" :key="card.id">
+            <dibox v-show="card.show" @close="hideDialog(card)">
                         <v-card>
                             <div class="d-flex justify-space-between">
                                 <v-card-title class="d-flex justify-end">
@@ -1127,7 +1008,7 @@
                                     <v-btn
                                         style="color: rgb(203, 50, 52)"
                                         variant="text"
-                                        @click="card.show = false"
+                                        @click="hideDialog(card)"
                                     >
                                         <h1>X</h1>
                                     </v-btn>
@@ -1543,11 +1424,129 @@
                             </v-btn>
                             <br />
                         </v-card>
-                    </v-dialog>
-                </v-col>
-            </v-row>
-        </v-container>
-        <br />
+                    </dibox>
+        </div>
+        <dibox scrollable v-show="card.show" @close="hideDialog1()" v-if="activador">
+                            <v-card>
+                                <div class="d-flex justify-space-between">
+                                    <v-card-title class="d-flex justify-end">
+                                        LISTA DE PRODUCTOS
+                                    </v-card-title>
+                                    <v-card-actions class="d-flex justify-start">
+                                        <v-btn
+                                            style="color: rgb(203, 50, 52)"
+                                            variant="text"
+                                            @click="hideDialog1()"
+                                        >
+                                            <h1>X</h1>
+                                        </v-btn>
+                                    </v-card-actions>
+                                </div>
+                                <v-divider></v-divider>
+                                <v-card-text class="text-pre-wrap">
+                                <v-row>
+                                    <v-col cols="12" sm="12" md="12">
+                                        <p style="color: #083545">
+                                            ESPARADRAPO HIPOALERGÉNICO DE TELA 2.5 cm X 9.1 m - CAJA X 12 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE PAPEL 2.5 cm X 9.1 m - CAJA X 12 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO ANTIALÉRGICO PLASTIFICADO 2.5 cm X 9.1 m - CAJA X 12 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE TELA 5 cm X 9.1 m - CAJA X 06 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE PAPEL 5 cm X 9.1 m - CAJA X 06 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO ANTIALÉRGICO PLASTIFICADO 5 cm X 9.1 m - CAJA X 06 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE TELA 7.5 cm X 9.1 m - CAJA X 04 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE PAPEL 7.5 cm X 9.1 m - CAJA X 04 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO ANTIALÉRGICO PLASTIFICADO 7.5 cm X 9.1 m - CAJA X 04 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE TELA - CAJA X 08 ROLLOS (04 rollos de 2.5 cm X 9.1 m y 04 rollos de 5 cm X 9.1 m).
+                                            <br />
+                                            <br />
+                                            PROTECTOR CUTANEO HEXAMETILDISILOXANO+TERPOLIMERO ACRILATO+POLIFENILMETILSILOXANO AEROSOL 28 mL - FRASCO.
+                                            <br />
+                                            <br />
+                                            PROTECTOR CUTANEO HEXAMETILDISILOXANO+TERPOLIMERO ACRILATO+POLIFENILMETILSILOXANO X 1 mL.
+                                            <br />
+                                            <br />
+                                            APOSITO TRANSPARENTE ADHESIVO 4.4 cm X 4.4 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APOSITO TRANSPARENTE ADHESIVO 6 cm X 7 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APOSITO TRANSPARENTE ADHESIVO 10 cm X 12 cm - CAJA X 50 UND.	
+                                            <br />
+                                            <br />
+                                            APOSITO TRANSPARENTE ADHESIVO 15 cm X 20 cm - CAJA X 10 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON GLUCONATO DE CLORHEXIDINA 7 cm X 8.5 cm - CAJA X 25 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON GLUCONATO DE CLORHEXIDINA 8.5 cm X 11.5 cm - CAJA X 25 UND. - CAJA X 25 SACHETS.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 3.8 cm X 4.5 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 7 cm X 8 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 5 cm X 5.7 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 6.5 cm X 7 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 8.5 cm X 11.5 cm - CAJA X 50 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 10 cm X 12 cm - CAJA X 50 UND.
+                                            <br />
+                                            <br />
+                                            MANTA TÉRMICA PARA CUERPO ENTERO 91 cm X 2.13 m APROX.
+                                            <br />
+                                            <br />
+                                            MANTA TERMICA PEDIATRICA 91 cm X 1.52 m.
+                                            <br />
+                                            <br />
+                                            MANTA TÉRMICA PARA EXTREMIDADES INFERIORES 91 cm X 1.52 m APROX.
+                                            <br />
+                                            <br />
+                                            MANTA TERMICA PEDIATRICA 1.52 m X 81 cm.
+                                            <br />
+                                            <br />
+                                            MANTA TERMICA PEDIATRICA 91 cm X 84 cm.
+                                            <br />
+                                            <br />
+                                            MANTA TÉRMICA PARA EXTREMIDADES SUPERIORES 61 cm X 1.98 m
+                                            <br />
+                                            <br />
+                                            MANTA TÉRMICA DE CUERPO ENTERO 91 cm X 2.21 m.
+                                            <br />
+                                            <br />
+                                            RESPIRADOR QUIRURGICO TIPO N95.
+                                        </p>
+                                    </v-col>
+                                </v-row>
+                                </v-card-text>
+                            </v-card>
+                        </dibox>
     </div>
 </template>
 <script>
