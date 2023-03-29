@@ -24,17 +24,17 @@
                             <v-card elevation="20" style="height:400px; width: 100%">
                                 <v-carousel hide-delimiters show-arrows="hover" cycle interval="3000" cover style="height:400px">
                                     <v-carousel-item
-                                        :src="ima21"
+                                        src="/imag/imagen30.jpg"
                                         cover
                                     ></v-carousel-item>
 
                                     <v-carousel-item
-                                        :src="ima22"
+                                        src"/imag/imagen31.jpg"
                                         cover
                                     ></v-carousel-item>
 
                                     <v-carousel-item
-                                        :src="ima23"
+                                        src="/imag/imagen32.jpg"
                                         cover
                                     ></v-carousel-item>
                                 </v-carousel>
@@ -63,17 +63,17 @@
                         <v-card elevation="20" style="width: 100%">
                             <v-carousel hide-delimiters show-arrows="hover" cycle interval="3000" height="400px" >
                                 <v-carousel-item
-                                    :src="ima21"
+                                    src="/imag/imagen30.jpg"
                                     cover
                                 ></v-carousel-item>
 
                                 <v-carousel-item
-                                    :src="ima22"
+                                    src"/imag/imagen31.jpg"
                                     cover
                                 ></v-carousel-item>
 
                                 <v-carousel-item
-                                    :src="ima23"
+                                    src="/imag/imagen32.jpg"
                                     cover
                                 ></v-carousel-item>
                             </v-carousel>
@@ -129,17 +129,17 @@
                         <v-card elevation="20">
                             <v-carousel hide-delimiters show-arrows="hover" cycle interval="3000" height="400px" >
                                 <v-carousel-item
-                                    :src="ima17"
+                                    src="/imag/imagen26.jpg"
                                     cover
                                 ></v-carousel-item>
 
                                 <v-carousel-item
-                                    :src="ima18"
+                                    src="/imag/imagen27.jpg"
                                     cover
                                 ></v-carousel-item>
 
                                 <v-carousel-item
-                                    :src="ima19"
+                                    src="/imag/imagen28.jpg"
                                     cover
                                 ></v-carousel-item>
                             </v-carousel>
@@ -208,29 +208,6 @@
 }
 </style>
 <script>
-import imag1 from "../assets/imagen10.jpg"
-import imag2 from "../assets/imagen11.jpg"
-import imag3 from "../assets/imagen12.jpg"
-import imag4 from "../assets/imagen13.jpg"
-import imag5 from "../assets/imagen14.jpg"
-import imag6 from "../assets/imagen15.jpg"
-import imag7 from "../assets/imagen16.jpg"
-import imag8 from "../assets/imagen17.jpg"
-import imag9 from "../assets/imagen18.jpg"
-import imag10 from "../assets/imagen19.jpg"
-import imag11 from "../assets/imagen20.jpg"
-import imag12 from "../assets/imagen21.jpg"
-import imag13 from "../assets/imagen22.jpg"
-import imag14 from "../assets/imagen23.jpg"
-import imag15 from "../assets/imagen24.jpg"
-import imag16 from "../assets/imagen25.jpg"
-import imag17 from "../assets/imagen26.jpg"
-import imag18 from "../assets/imagen27.jpg"
-import imag19 from "../assets/imagen28.jpg"
-import imag20 from "../assets/imagen29.jpg"
-import imag21 from "../assets/imagen30.jpg"
-import imag22 from "../assets/imagen31.jpg"
-import imag23 from "../assets/imagen32.jpg"
 export default {
     beforeMount(){
       this.activador = true
@@ -238,16 +215,9 @@ export default {
     data() {
         return {
             active: false,
-            cards: [imag1, imag2, imag3, imag4, imag5, imag6, imag7, imag8],
-            cards1: [imag9, imag10, imag11, imag12, imag13, imag14, imag15, imag16],
+            cards: ["/imag/imagen10.jpg", "/imag/imagen11.jpg", "/imag/imagen12.jpg", "/imag/imagen13.jpg", "/imag/imagen14.jpg", "/imag/imagen15.jpg", "/imag/imagen16.jpg", "/imag/imagen17.jpg"],
+            cards1: ["/imag/imagen18.jpg", "/imag/imagen19.jpg", "/imag/imagen20.jpg", "/imag/imagen21.jpg", "/imag/imagen22.jpg", "/imag/imagen23.jpg", "/imag/imagen24.jpg", "/imag/imagen25.jpg"],
             activador: false,
-            ima17: imag17,
-            ima18: imag18,
-            ima19: imag19,
-            ima20: imag20,
-            ima21: imag21,
-            ima22: imag22,
-            ima23: imag23,
         }
     }
 }
