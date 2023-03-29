@@ -998,7 +998,7 @@
             </LazyDibox>
         </div>
         <div v-for="card in cards1" :key="card.id">
-            <dibox v-if="card.show" @close="hideDialog(card)">
+            <LazyDibox v-if="card.show" @close="hideDialog(card)">
                         <v-card>
                             <div class="d-flex justify-space-between">
                                 <v-card-title class="d-flex justify-end">
@@ -1424,9 +1424,9 @@
                             </v-btn>
                             <br />
                         </v-card>
-                    </dibox>
+                    </LazyDibox>
         </div>
-        <dibox scrollable v-show="model1" @close="hideDialog1()" v-if="activador">
+        <LazyDibox scrollable v-show="model1" @close="hideDialog1()" v-if="activador">
                             <v-card>
                                 <div class="d-flex justify-space-between">
                                     <v-card-title class="d-flex justify-end">
@@ -1546,7 +1546,7 @@
                                 </v-row>
                                 </v-card-text>
                             </v-card>
-        </dibox>
+        </LazyDibox>
     </div>
 </template>
 <script>
