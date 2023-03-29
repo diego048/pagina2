@@ -112,6 +112,10 @@
                 </v-row>
             </v-container>
         </div>
+        <v-img
+            height="200px"
+            src="/imagen1.png"
+        ></v-img>
     </div>
 </template>
 <script>
