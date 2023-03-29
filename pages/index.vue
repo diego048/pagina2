@@ -208,7 +208,7 @@
             </v-container>
         </div>
         <div v-for="card in cards" :key="card.id">
-            <dibox v-show="card.show" @close="hideDialog(card)">
+            <LazyDibox v-show="card.show" @close="hideDialog(card)">
                                                             <div class="d-flex justify-space-between">
                                     <v-card-title class="d-flex justify-end">
                                         {{ card.title }}
@@ -618,7 +618,7 @@
                                         <v-img :src="ima11" style="width: 100%"></v-img>
                                     </div>
                                 </div>
-                        </dibox>
+                        </LazyDibox>
         </div>
     </div>
 </template>
