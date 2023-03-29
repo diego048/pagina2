@@ -53,17 +53,17 @@
               HOME
             </v-btn>
           </div>
-          <div v-show="!mobile">
+          <div v-show="!mobile" class="d-none d-sm-flex">
             <v-btn class="link" to="/nosotros">
               NOSOTROS
             </v-btn>
           </div>
-          <div v-show="!mobile">
+          <div v-show="!mobile" class="d-none d-sm-flex">
             <v-btn class="link" to="/productos">
               PRODUCTOS
             </v-btn>
           </div>
-          <div v-show="!mobile">
+          <div v-show="!mobile" class="d-none d-sm-flex">
             <v-btn class="link" to="/eventos">
               EVENTOS
             </v-btn>
