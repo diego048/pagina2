@@ -117,7 +117,7 @@
                             </div>
                             <v-divider></v-divider>
                             <v-card-text align="justify">
-                                <div v-show="card.show1">
+                                <div v-if="card.show1">
                                     <v-row>
                                         <v-col cols="12" sm="6" md="6">
                                             <v-img :src="ima14" style="width: 100%"></v-img>
@@ -175,7 +175,7 @@
                                         </v-col>
                                     </v-row>
                                 </div>
-                                <div v-show="card.show2">
+                                <div v-if="card.show2">
                                     <v-row>
                                         <v-col cols="12" sm="6" md="6">
                                             <h2>Descripción</h2>
@@ -314,7 +314,7 @@
                                         </v-table>
                                     </div>
                                 </div>
-                                <div v-show="card.show3">
+                                <div v-if="card.show3">
                                     <v-row>
                                         <v-col cols="12" sm="6" md="6">
                                             <v-carousel show-arrows="hover" hide-delimiters>
@@ -457,7 +457,7 @@
                                         </v-table>
                                     </div>
                                 </div>
-                                <div v-show="card.show4">
+                                <div v-if="card.show4">
                                     <h2>Descripción</h2>
                                     <p>
                                         Cinta quirúrgica de rayón no tejida, microporosa, libre de látex
@@ -647,7 +647,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div v-show="card.show5">
+                                <div v-if="card.show5">
                                     <v-row>
                                         <v-col>
                                             <h3>
@@ -705,7 +705,7 @@
                                     </v-row>
                                     <v-img :src="ima12" style="width: 100%"></v-img>
                                 </div>
-                                <div v-show="card.show6">
+                                <div v-if="card.show6">
                                     <v-row>
                                         <v-col cols="12" sm="6" md="6">
                                             <h3>
@@ -788,7 +788,7 @@
                                     </v-row>
                                     
                                 </div>
-                                <div v-show="card.show7">
+                                <div v-if="card.show7">
                                     <v-row>
                                         <v-col cols="12">
                                             <v-container style="background-color: #F5F5F5">
@@ -873,7 +873,7 @@
                                         </v-col>
                                     </v-row>
                                 </div>
-                                <div v-show="card.show8">
+                                <div v-if="card.show8">
                                     <v-row>
                                         <v-col cols="12" sm="6" md="6" class="align-self-center d-flex d-sm-none">
                                             <v-img :src="card.src" style="width: 100%"></v-img>
@@ -941,7 +941,7 @@
                                         </v-col>
                                     </v-row>
                                 </div>
-                                <div v-show="card.show9">
+                                <div v-if="card.show9">
                                     <v-row>
                                         <v-col>
                                             <h2>DESCRIPCIÓN:</h2>
@@ -998,7 +998,7 @@
             </dibox>
         </div>
         <div v-for="card in cards1" :key="card.id">
-            <dibox v-show="card.show" @close="hideDialog(card)">
+            <dibox v-if="card.show" @close="hideDialog(card)">
                         <v-card>
                             <div class="d-flex justify-space-between">
                                 <v-card-title class="d-flex justify-end">
@@ -1051,7 +1051,7 @@
                                         </v-list>
                                     </v-col>
                                 </v-row>
-                                <v-row v-show="card.show2">
+                                <v-row v-if="card.show2">
                                     <v-col cols="12" sm="6" md="6" align="center">
                                         <v-img :src="card.src" height="200px"></v-img>
                                         <br />
@@ -1078,7 +1078,7 @@
                                         </v-list>
                                     </v-col>
                                 </v-row>
-                                <div v-show="card.show3">
+                                <div v-if="card.show3">
                                     <v-row>
                                         <v-col cols="12" sm="6" md="6">
                                             <div style="background: linear-gradient(0.3turn, #101D64, rgba(10,146,176,0.81)); color: white;" align="center">
@@ -1245,7 +1245,7 @@
                                         </v-col>
                                     </v-row>
                                 </div>
-                                <div v-show="card.show4">
+                                <div v-if="card.show4">
                                     <v-row>
                                         <v-col>
                                             <p>
@@ -1443,7 +1443,7 @@
                                     </v-card-actions>
                                 </div>
                                 <v-divider></v-divider>
-                                <v-card-text class="text-pre-wrap">
+                                <v-card-text class="text-pre-wrap" v-if="model1">
                                 <v-row>
                                     <v-col cols="12" sm="12" md="12">
                                         <p style="color: #083545">
