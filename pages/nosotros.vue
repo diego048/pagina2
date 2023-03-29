@@ -1,5 +1,5 @@
 <template>
-    <div v-if="false">
+    <div>
         <div id="background1">
             <br />
             <h1 align="center" style="color: white">ESTAMOS CAMBIANDO EL MUNDO</h1>
