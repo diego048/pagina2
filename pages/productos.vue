@@ -94,6 +94,1459 @@
                 </v-col>
             </v-row>
         </v-container>
+        
+        <div v-for="card in cards" :key="card.id">
+            <dibox v-show="card.show" @close="hideDialog(card)">
+                        
+                        <v-card>
+                            <div class="d-flex justify-space-between text-pre-wrap">
+                                <div>
+                                    <v-card-title class="text-pre-wrap" style="word-break: break-word">
+                                        {{ card.title }}
+                                    </v-card-title>
+                                </div>
+                                <v-card-actions>
+                                    <v-btn
+                                        style="color: rgb(203, 50, 52)"
+                                        variant="text"
+                                        @click="hideDialog(card)"
+                                    >
+                                        <h1>X</h1>
+                                    </v-btn>
+                                </v-card-actions>
+                            </div>
+                            <v-divider></v-divider>
+                            <v-card-text align="justify">
+                                <div v-show="card.show1">
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <v-img :src="ima14" style="width: 100%"></v-img>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <v-img :src="ima15" style="width: 100%"></v-img>
+                                        </v-col>
+                                        <v-col cols="12">
+                                            <v-img :src="ima16" style="width: 100%"></v-img>
+                                        </v-col>
+                                    </v-row>
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6" class="align-self-center">
+                                            <h2>
+                                                Apósito Transparente Tegaderm CHG para el Aseguramiento del 
+                                                Sitio 1.V. con Gluconato de Clorhexidina
+                                            </h2>
+                                            <p>
+                                                El único apósito transparente que se ha comprobado que reduce CREBSI y la
+                                                colonización del catéter vascular. La almohadilla de gel provee 2% de CHG
+                                                a la superficie de la piel inmediatamente, sin requerir humedad para acti-
+                                                varse. El diseño integrado asegura una aplicación consistente, apegándose
+                                                a los lineamientos basados en evidencia y los estándares de la práctica.
+                                            </p>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <v-img :src="ima17" style="width: 100%"></v-img>
+                                        </v-col>
+                                        <v-col cols="12" sm="12" md="12">
+                                            <v-img :src="ima18" style="width: 100%"></v-img>
+                                        </v-col>
+                                    </v-row>
+                                    <v-row>
+                                        <v-col cols="12">
+                                            <h2>
+                                                Diseñados para brindar aseguramiento consistente y comodidad
+                                            </h2>
+                                            <h4>
+                                                Apósito Transparente 3M'“ Tegaderm"* |.V. Aseguramiento Avanzado
+                                            </h4>
+                                            <p>
+                                                Un apósito transparente transpirable, que protege de la contaminación 
+                                                externa y puede usarse como método de aseguramiento primario para catéteres 
+                                                periféricos, arteriales y catéteres centrales de inserción periférica (PICCs, 
+                                                por sus siglas en inglés). Los Apósitos Transparentes 3M'“ Tegaderm"" 1.V. 
+                                                Aseguramiento Avanzado son una solución cómoda que brinda aseguramiento, 
+                                                visibilidad del sitio de inserción y transpirabilidad en un solo producto.
+                                            </p>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6" class="align-self-center">
+                                            <v-img :src="ima19" style="width: 100%"></v-img>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <v-img :src="ima20" style="width: 100%"></v-img>
+                                        </v-col>
+                                    </v-row>
+                                </div>
+                                <div v-show="card.show2">
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <h2>Descripción</h2>
+                                            <p>
+                                                Cinta quirúrgica tipo seda de tafetán tejido, libre
+                                                de látex e hipoalergénica que puede cortarse
+                                                fácilmente en dirección longitudinal y transversal
+                                                sin necesidad de usar tijeras. Posee una alta adhesión
+                                                inicial y a largo plazo. En piel húmeda su adhesión
+                                                es baja. El tipo de soporte otorga a la cinta una gran
+                                                resistencia a la tensión y al agua, y una apariencia
+                                                profesional. Es segura para aplicaciones que requieren
+                                                un mayor poder adhesivo y resistencia por tiempo
+                                                prolongado.
+                                            </p>
+                                            <br />
+                                            <h2>Beneficios</h2>
+                                            <v-list>
+                                                <v-list-item v-for="item in items15" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <h2>Ventajas</h2>
+                                            <v-list>
+                                                <v-list-item v-for="item in items16" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                    </v-row>
+                                    <v-divider></v-divider>
+                                    <div class="d-none d-sm-flex">
+                                        <v-table style="width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Presentación
+                                                    </th>
+                                                    <th>
+                                                        Tamaño
+                                                    </th>
+                                                    <th>
+                                                        Rollos/Caja
+                                                    </th>
+                                                    <th>
+                                                        Cajas/Cartón.
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>    
+                                                    <td>1538-1</td>
+                                                    <td>1 in x 10 yd /2,5 cm x 9,14 m</td>
+                                                    <td>12 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>1538-2</td>
+                                                    <td>2 in x 10 yd / 5,0 cm x 9.14 m</td>
+                                                    <td>6 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>1538-3</td>
+                                                    <td>3 in x 10 yd/ 7,5 cm x 9,14 m</td>
+                                                    <td>4 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                            </tbody>
+                                        </v-table>
+                                    </div>
+                                    <div class="d-flex d-sm-none">
+                                        <v-table style="width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Presentación
+                                                    </th>
+                                                    <th>
+                                                        Tamaño
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>    
+                                                    <td>1538-1</td>
+                                                    <td>1 in x 10 yd /2,5 cm x 9,14 m</td>
+
+                                                </tr>
+                                                <tr>    
+                                                    <td>1538-2</td>
+                                                    <td>2 in x 10 yd / 5,0 cm x 9.14 m</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>1538-3</td>
+                                                    <td>3 in x 10 yd/ 7,5 cm x 9,14 m</td>
+                                                </tr>
+                                            </tbody>
+                                        </v-table>
+                                    </div>
+                                    <div class="d-flex d-sm-none">
+                                        <v-table style="width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Rollos/Caja
+                                                    </th>
+                                                    <th>
+                                                        Cajas/Cartón.
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>    
+                                                    <td>12 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>6 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>4 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                            </tbody>
+                                        </v-table>
+                                    </div>
+                                </div>
+                                <div v-show="card.show3">
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <v-carousel show-arrows="hover" hide-delimiters>
+                                                <v-carousel-item
+                                                    :src="ima13"
+                                                ></v-carousel-item>
+
+                                                <v-carousel-item
+                                                    :src="card.src"
+                                                ></v-carousel-item>
+                                            </v-carousel>
+                                            <h2>Descripción</h2>
+                                            <br />
+                                            <p>
+                                                Cinta quirúrgica de polietileno de baja densidad, transparente,
+                                                macroperforada, libre de látex e hipoalergénica que puede
+                                                cortarse fácilmente en dirección longitudinal y transversal
+                                                sin necesidad de usar tijeras. Posee una alta adhesión inicial
+                                                en piel seca y moderada en piel húmeda. Es versátil y segura
+                                                para aplicaciones de corta duración que requieren rapidez
+                                                y facilidad de manejo, incluso con guantes.
+                                            </p>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <h2>Ventajas</h2>
+                                            <v-list>
+                                                <v-list-item v-for="item in items13" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                            <h2>beneficios</h2>
+                                            <v-list>
+                                                <v-list-item v-for="item in items14" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                    </v-row>
+                                    <div class="d-none d-sm-flex">
+                                        <v-table style="width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Presentación
+                                                    </th>
+                                                    <th>
+                                                        Tamaño
+                                                    </th>
+                                                    <th>
+                                                        Rollos/Caja
+                                                    </th>
+                                                    <th>
+                                                        Cajas/Cartón.
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>    
+                                                    <td>1527-1</td>
+                                                    <td>1 in x 10 yd /2,5 cm x 9,14 m</td>
+                                                    <td>12 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>1527-2</td>
+                                                    <td>2 in x 10 yd / 5,0 cm x 9.14 m</td>
+                                                    <td>6 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>1527-3</td>
+                                                    <td>3 in x 10 yd/ 7,5 cm x 9,14 m</td>
+                                                    <td>4 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                            </tbody>
+                                        </v-table>
+                                    </div>
+                                    <div class="d-flex d-sm-none">
+                                        <v-table style="width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Presentación
+                                                    </th>
+                                                    <th>
+                                                        Tamaño
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>    
+                                                    <td>1527-1</td>
+                                                    <td>1 in x 10 yd /2,5 cm x 9,14 m</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>1527-2</td>
+                                                    <td>2 in x 10 yd / 5,0 cm x 9.14 m</td>
+
+                                                </tr>
+                                                <tr>    
+                                                    <td>1527-3</td>
+                                                    <td>3 in x 10 yd/ 7,5 cm x 9,14 m</td>
+                                                </tr>
+                                            </tbody>
+                                        </v-table>
+                                    </div>
+                                    <div class="d-flex d-sm-none">
+                                        <v-table style="width: 100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Rollos/Caja
+                                                    </th>
+                                                    <th>
+                                                        Cajas/Cartón.
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>    
+                                                    <td>12 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>6 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                                <tr>    
+                                                    <td>4 rollos/caja.</td>
+                                                    <td>10 cajas/cartón.</td>
+                                                </tr>
+                                            </tbody>
+                                        </v-table>
+                                    </div>
+                                </div>
+                                <div v-show="card.show4">
+                                    <h2>Descripción</h2>
+                                    <p>
+                                        Cinta quirúrgica de rayón no tejida, microporosa, libre de látex
+                                        e hipoalergénica que es suave con la piel del paciente, aunque,
+                                        se adhiere bien especialmente, en piel húmeda y en aplicaciones
+                                        prolongadas. Es económica y la marca de mayor confianza para
+                                        los profesionales de la salud por más de 50 años.
+                                        <br />
+                                        <br />
+                                        Disponible en color blanco, con y sin dispensador, y en tonalidad 
+                                        piel.
+                                    </p>
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <h2>Ventajas</h2>
+                                            <v-list>
+                                                <v-list-item v-for="item in items10" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <h2>Beneficios</h2>
+                                            <v-list>
+                                                <v-list-item v-for="item in items17" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                    </v-row>
+                                    <v-divider></v-divider>
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <v-list>
+                                                <v-list-item v-for="item in items11" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <v-list>
+                                                <v-list-item v-for="item in items12" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                    </v-row>
+                                    <v-divider></v-divider>
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <v-list>
+                                                <v-list-item>
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">
+                                                            Permite corte recto y estético sin necesidad de usar tijeras.
+                                                        </p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <v-list>
+                                                <v-list-item>
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">Fácil de usar</p>
+                                                    </div>
+                                                </v-list-item>
+                                                <v-list-item>
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">Conveniencia.</p>
+                                                    </div> 
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                    </v-row>
+                                    <div  class="d-none d-sm-flex">
+                                        <div style="width: 100%">
+                                            <v-table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            Presentación
+                                                        </th>
+                                                        <th>
+                                                            Tamaño
+                                                        </th>
+                                                        <th>
+                                                            Rollos/Caja
+                                                        </th>
+                                                        <th>
+                                                            Cajas/Cartón.
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>    
+                                                        <td>1530-1</td>
+                                                        <td>1 in x 10 yd /2,5 cm x 9,14 m</td>
+                                                        <td>12 rollos/caja.</td>
+                                                        <td>10 cajas/cartón.</td>
+                                                    </tr>
+                                                    <tr>    
+                                                        <td>1530-2</td>
+                                                        <td>2 in x 10 yd / 5,0 cm x 9.14 m</td>
+                                                        <td>6 rollos/caja.</td>
+                                                        <td>10 cajas/cartón.</td>
+                                                    </tr>
+                                                    <tr>    
+                                                        <td>1530-3</td>
+                                                        <td>3 in x 10 yd/ 7,5 cm x 9,14 m</td>
+                                                        <td>4 rollos/caja.</td>
+                                                        <td>10 cajas/cartón.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </v-table> 
+                                        </div> 
+                                    </div>                              
+                                    <div class="d-flex d-sm-none">
+                                            <div>
+                                            <v-table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            Presentación
+                                                        </th>
+                                                        <th>
+                                                            Tamaño
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>    
+                                                        <td>1530-1</td>
+                                                        <td>1 in x 10 yd /2,5 cm x 9,14 m</td>
+                                                    </tr>
+                                                    <tr>    
+                                                        <td>1530-2</td>
+                                                        <td>2 in x 10 yd / 5,0 cm x 9.14 m</td>
+                                                    </tr>
+                                                    <tr>    
+                                                        <td>1530-3</td>
+                                                        <td>3 in x 10 yd/ 7,5 cm x 9,14 m</td>
+                                                    </tr>
+                                                </tbody>
+                                            </v-table>
+                                            <v-table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            Rollos/Caja
+                                                        </th>
+                                                        <th>
+                                                            Cajas/Cartón.
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>    
+                                                        <td>12 rollos/caja.</td>
+                                                        <td>10 cajas/cartón.</td>
+                                                    </tr>
+                                                    <tr>    
+                                                        <td>6 rollos/caja.</td>
+                                                        <td>10 cajas/cartón.</td>
+                                                    </tr>
+                                                    <tr>    
+                                                        <td>4 rollos/caja.</td>
+                                                        <td>10 cajas/cartón.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </v-table>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div v-show="card.show5">
+                                    <v-row>
+                                        <v-col>
+                                            <h3>
+                                                Cavilon Película Protectora Sin Ardor es una versátil 
+                                                solución para ayudar a prevenir el daño de la piel antes 
+                                                que suceda y para proteger la piel ya dañada de sufrir mayores 
+                                                lesiones.
+                                            </h3>
+                                            <br />
+                                            <p>
+                                                El trauma adhesivo, los fluidos corporales y la fricción pueden 
+                                                deteriorar la piel rápidamente. Cavilon Película Protectora Sin 
+                                                Ardor es la película protectora libre de alcohol original y la única 
+                                                a base de terpolímero que otorga protección contra el daño de la piel. 
+                                                Su formulación única contiene polímeros que forman una capa protectora
+                                                que no produce ardor al aplicar y que resiste el agua. Es respirable y 
+                                                transparente, permitiendo la visualización y monitoreo continuo de la 
+                                                piel. Gracias a que contiene un plastificante, es flexible y se adapta a 
+                                                la piel durante movimientos o cambios de posición.
+                                            </p>
+                                        </v-col>
+                                    </v-row>
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <v-list>
+                                                <v-list-item v-for="item in items9" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6" class="d-flex justify-center align-self-center">
+                                            <div>
+                                                <v-img :src="card.src" style="width: 40vh; min-width: 300px"></v-img>
+                                            </div>
+                                        </v-col>
+                                    </v-row>
+                                    <v-row>
+                                        <v-col>
+                                            <p>
+                                                Cavilon Película Protectora Sin Ardor está excepcionalmente formulada
+                                                para proteger la piel de las heces, orina y adhesivos. Su formulación no
+                                                citotóxica y libre de alcohol, otorga comodidad al paciente, incluso cuando
+                                                la piel está dañada.
+                                            </p>
+                                            <br />
+                                            <p>
+                                                Cavilon Película Protectora Sin Ardor está especialmente indicada para proteger 
+                                                la piel intacta (DAI categoría 1) o dañada (DAI categoría 2) y cumple todas
+                                                características de un producto ideal para la DAI.
+                                            </p>
+                                        </v-col>
+                                    </v-row>
+                                    <v-img :src="ima12" style="width: 100%"></v-img>
+                                </div>
+                                <div v-show="card.show6">
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <h3>
+                                                Los pacientes anestesiados no pueden regular su temperatura
+                                            </h3>
+                                            <br />
+                                            <p>
+                                                La respuesta fisiológica del cuerpo a la anestesia pone en riesgo
+                                                de hipotermia inadvertida prácticamente a cada paciente
+                                                quirúrgico anestesiado, independientemente de la edad, el
+                                                sexo 0 el estado físico. Las investigaciónes muestran que la
+                                                temperatura central del cuerpo disminuye rápidamente (hasta
+                                                1,6 “C solo en la primera hora') después de la inducción de la
+                                                anestesia.
+                                            </p>
+                                            <br />
+                                            <p>
+                                                Desafortunadamente, la hipotermia inadvertida sigue siendo
+                                                una complicación demasiado frecuente y costosa de la cirugía,
+                                                a menudo asociada con tasas más altas de mortalidad”,
+                                                hospitalizaciones más prolongadas* y una mayor tasa de
+                                                infección en las heridas".
+                                            </p>
+                                            <br />
+                                            <h2>Mantas bajo paciente</h2>
+                                            <v-row>
+                                                <v-col>
+                                                    <v-img :src="ima3" style="width: 100%"></v-img>
+                                                </v-col>
+                                                <v-col>
+                                                    <v-img :src="ima4" style="width: 100%"></v-img>
+                                                </v-col>
+                                                <v-col>
+                                                    <v-img :src="ima5" style="width: 100%"></v-img>
+                                                </v-col>
+                                            </v-row>
+                                            <h2>Mantas intraoperatorias</h2>
+                                            <v-row>
+                                                <v-col>
+                                                    <v-img :src="ima6" style="width: 100%"></v-img>
+                                                </v-col>
+                                                <v-col>
+                                                    <v-img :src="ima7" style="width: 100%"></v-img>
+                                                </v-col>
+                                            </v-row>
+                                            <h2>Mantas para postoperatorio</h2>
+                                            <v-img :src="ima8" style="width: 100%"></v-img>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <h3>
+                                                La buena noticia: la hipotermia inadvertida se puede prevenir 
+                                                fácilmente
+                                            </h3>
+                                            <br />
+                                            <p>
+                                                Los estudios muestran que la administración de calor al paciente
+                                                en la fase perioperatoria para mantener una temperatura central
+                                                de 36,0 *C o superior, ayuda a mejorar los resultados, ya que
+                                                reduce la frecuencia de las complicaciones que a menudo están
+                                                asociadas con la hipotermia inadvertida. El calentamiento con
+                                                aire forzado ofrece un método seguro, simple y económico
+                                                de prevenir la hipotermia inadvertida y sus complicaciones.
+                                            </p>
+                                            <br />
+                                            <v-row>
+                                                <v-col cols="6" sm="6" md="6">
+                                                    <v-img :src="ima9" style="width: 100%"></v-img>
+                                                </v-col>
+                                                <v-col cols="6" sm="6" md="6">
+                                                    <v-img :src="ima10" style="width: 100%"></v-img>
+                                                </v-col>
+                                                <v-col cols="6" sm="12" md="12">
+                                                    <v-img :src="ima11" style="width: 100%"></v-img>
+                                                </v-col>
+                                                <v-col cols="6" sm="12" md="12">
+                                                    <v-img :src="card.src" style="width: 100%"></v-img>
+                                                </v-col>
+                                            </v-row>
+                                        </v-col>
+                                    </v-row>
+                                    
+                                </div>
+                                <div v-show="card.show7">
+                                    <v-row>
+                                        <v-col cols="12">
+                                            <v-container style="background-color: #F5F5F5">
+                                                <h1 align="center">Mascarillas versus Respiradores</h1>
+                                                <br />
+                                                <v-table>
+                                                    <tbody>
+                                                    <tr
+                                                        v-for="item in cards2"
+                                                        :key="item.name"
+                                                    >
+                                                        <td style="background-color: #F5F5F5">{{ item.text1 }}</td>
+                                                        <td style="background-color: #C3BADC" align="center">{{ item.text2 }}</td>
+                                                        <td style="background-color: #F5F5F5">{{ item.text3 }}</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </v-table>
+                                            </v-container>
+                                            <br />
+                                            <h2></h2>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <div align="center" class="d-flex d-sm-none justify-center">
+                                                <div>
+                                                    <v-img :src="card.src" style="width: 50vh" ></v-img>
+                                                </div>
+                                            </div>
+                                            <h2>Aspectos Claves</h2>
+                                            <v-list>
+                                                <v-list-item v-for="item in items5" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                                <br />
+                                                <h2>Composición del material</h2>
+                                                <v-list-item v-for="item in items6" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <div align="center" class="d-none d-sm-flex justify-center">
+                                                <div>
+                                                    <v-img :src="card.src" style="width: 50vh" ></v-img>
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <h2>Aprobaciones y Normas</h2>
+                                            <v-list>
+                                                <v-list-item v-for="item in items8" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                    </v-row>
+                                    <v-row>
+                                        <v-col cols="12" sm="12" md="12">
+                                            <h2>País de origen</h2>
+                                            <p>
+                                                Hecho en los EE. UU. con materiales de
+                                                abastecimiento global
+                                            </p>
+                                            <br />
+                                            <h2>Debe usarse para:</h2>
+                                            <v-list>
+                                                <v-list-item v-for="item in items7" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                                
+                                            </v-list>
+                                        </v-col>
+                                    </v-row>
+                                </div>
+                                <div v-show="card.show8">
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6" class="align-self-center d-flex d-sm-none">
+                                            <v-img :src="card.src" style="width: 100%"></v-img>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <h2>Descripción</h2>
+                                            <p>
+                                                El respirador desechable 3M Aura 1870+ ha sido diseñado 
+                                                especialmente para proteger contra material particulado a 
+                                                los usuarios que laboran en el área de la salud. Está destinado 
+                                                a reducir la exposición a ciertas partículas en el aire, incluyendo 
+                                                las generadas por electrocauterización, cirugía con láser, entre 
+                                                otros. Además, cumple con las directrices establecidas por el Centers 
+                                                for Disease Control and Prevention (CDC) de Estados Unidos, para el 
+                                                control de la exposición a Mycobacterium Tuberculosis.
+                                            </p>
+                                            <br />
+                                            <p>
+                                                Adicionalmente, este respirador ha sido aprobado por la FDA para ser 
+                                                utilizado como una mascarilla quirúrgica, dado que resiste las salpicaduras 
+                                                de fluidos, sangre y otros materiales infecciosos en forma de partículas o 
+                                                presentes sobre partículas. Este respirador puede ser usado en quirófanos, 
+                                                clínicas, centros de atención primaria, partos y nacimientos, laboratorios 
+                                                clínicos, emergencias y/o planes de preparación pandémica, entre otros.
+                                            </p>
+                                            <br />
+                                            <p>
+                                                Su diseño único de tres paneles se ajusta a la mayoría de tamaños de cara y 
+                                                formas de cabeza, permitiendo la estandarización de un solo respirador.
+                                            </p>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6" class="align-self-center d-none d-sm-flex">
+                                            <v-img :src="card.src" style="width: 100%"></v-img>
+                                        </v-col>
+                                    </v-row>
+                                    <br />
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <h2 align="center">Características</h2>
+                                            <v-list>
+                                                <v-list-item v-for="item in items3" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <h2 align="center">Certificaciones y Aprobaciones</h2>
+                                            <br />
+                                            <p>
+                                                Este respirador ha sido Certificado por NIOSH (National
+                                                Institute for Occupational Safety And Health) de Estados
+                                                Unidos bajo la especificación N95 de la norma 42CFRS4.
+                                            </p>
+                                            <v-list>
+                                                <v-list-item v-for="item in items4" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                    </v-row>
+                                </div>
+                                <div v-show="card.show9">
+                                    <v-row>
+                                        <v-col>
+                                            <h2>DESCRIPCIÓN:</h2>
+                                            <p align="justify">
+                                                Vendaje con unguento no medicado, estéril, que asegura que la 
+                                                herida no sea afectada y ayuda a mantener un entorno húmedo que 
+                                                contribuye a la cicatrización de la herida
+                                            </p>
+                                        </v-col>
+                                    </v-row>
+                                    <v-row>
+                                        <v-col cols="12" sm="12" md="6">
+                                            <h2>CARACTERÍSTICAS:</h2>
+                                            <br />
+                                            <v-list>
+                                                <v-list-item v-for="item in items2" :key="item.title">
+                                                    <div class="d-flex flex-row ">
+                                                        <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                        <p class="pl-8">{{ item.title }}</p>
+                                                    </div>
+                                                </v-list-item>
+                                            </v-list>
+                                        </v-col>
+                                        <v-col cols="12" sm="12" md="6">
+                                            <v-carousel show-arrows="hover" hide-delimiters>
+                                                <v-carousel-item
+                                                    :src="ima1"
+                                                ></v-carousel-item>
+
+                                                <v-carousel-item
+                                                    :src="card.src"                                                    
+                                                ></v-carousel-item>
+
+                                                <v-carousel-item
+                                                    :src="ima2"                                                    
+                                                ></v-carousel-item>
+                                            </v-carousel>
+                                        </v-col>
+                                    </v-row>
+
+                                </div>
+                            </v-card-text>
+                            <v-divider></v-divider>
+                            <br />
+                            <v-btn
+                                color="blue-darken-1"
+                                variant="text"
+                                to="/#formulario"
+                            >
+                                MÁS INFORMACIÓN
+                            </v-btn>
+                            <br />
+                        </v-card>
+            </dibox>
+        </div>
+        <div v-for="card in cards1" :key="card.id">
+            <dibox v-show="card.show" @close="hideDialog(card)">
+                        <v-card>
+                            <div class="d-flex justify-space-between">
+                                <v-card-title class="d-flex justify-end">
+                                    {{ card.title }}
+                                </v-card-title>
+                                <v-card-actions class="d-flex justify-start">
+                                    <v-btn
+                                        style="color: rgb(203, 50, 52)"
+                                        variant="text"
+                                        @click="hideDialog(card)"
+                                    >
+                                        <h1>X</h1>
+                                    </v-btn>
+                                </v-card-actions>
+                            </div>
+                            <v-divider></v-divider>
+                            <v-card-text align="justify" class="text-pre-wrap">
+                                <v-row v-show="card.show1">
+                                    <v-col cols="12" sm="6" md="6" align="center">
+                                        <v-card rounded="lg" variant="outlined" color="blue" align="center" width="300">
+                                            <h2 style="color: black">Medidas</h2>                                        
+                                            <br />
+                                            <p style="color: black">
+                                                3" x 5 yardas
+                                                <br />
+                                                4" x 5 yardas
+                                                <br />
+                                                5"  x 5 yardas
+                                                <br />
+                                                6"  x 5 yardas
+                                                <br />
+                                                8"  x 5 yardas
+                                                <br />
+                                                10" x 5 yardas
+                                                <br />
+                                                12" x 5 yardas
+                                            </p>
+                                        </v-card>
+                                        <br />
+                                        <v-img :src="card.src" height="200px"></v-img>
+                                    </v-col>
+                                    <v-col cols="12" sm="6" md="6" >
+                                        <v-list>
+                                            <v-list-item v-for="item in items1" :key="item.title">
+                                                <div class="d-flex flex-row ">
+                                                    <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                    <p class="pl-8">{{ item.title }}</p>
+                                                </div>
+                                            </v-list-item>
+                                        </v-list>
+                                    </v-col>
+                                </v-row>
+                                <v-row v-show="card.show2">
+                                    <v-col cols="12" sm="6" md="6" align="center">
+                                        <v-img :src="card.src" height="200px"></v-img>
+                                        <br />
+                                        <v-card rounded="pill" style="background-color:red; color: white" align="center" width="200">
+                                            <h2>Medidas</h2>
+                                        </v-card>
+                                        <br />
+                                        <p>
+                                            4" x 5 yardas
+                                            <br />
+                                            6" x 5 yardas
+                                            <br />
+                                            8" x 5 yardas
+                                        </p>
+                                    </v-col>
+                                    <v-col cols="12" sm="6" md="6" >
+                                        <v-list>
+                                            <v-list-item v-for="item in items" :key="item.title">
+                                                <div class="d-flex flex-row ">
+                                                    <v-icon icon="mdi-circle" color="blue-darken-4" ></v-icon>
+                                                    <p class="pl-8">{{ item.title }}</p>
+                                                </div>
+                                            </v-list-item>
+                                        </v-list>
+                                    </v-col>
+                                </v-row>
+                                <div v-show="card.show3">
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <div style="background: linear-gradient(0.3turn, #101D64, rgba(10,146,176,0.81)); color: white;" align="center">
+                                                <br />
+                                                <h3>DESCRIPCIÓN DEL PRODUCTO</h3>
+                                                <br />
+                                            </div>
+                                            <br />
+                                            <p>
+                                                El paquete de pruebas Bowie & Dick Comply™ 00135LF, consiste de una hoja
+                                                con indicador químico sensible a la presencia del vapor, ubicada dentro de
+                                                un paquete de pruebas construido de materiales porosos (hojas de papel),
+                                                ubicados entre dos capas de material impermeable (parte superior e inferior).
+                                                El paquete de pruebas se encuentra empacado en material no tejido
+                                                descartable.
+                                                <br />
+                                                <br />
+                                                Todos los indicadores químicos utilizados son libres de plomo.
+                                                La hoja primaria de Bowie & Dick; permite detectar la presencia de bolsas
+                                                de aire para determinar un adecuado vacío de aire. Cuando se remueve
+                                                exitosamente el aire del interior de la cámara; cruz de San Andrés modificada,
+                                                cambia; pasando de color amarillo a color marrón oscuro.
+                                                Adicionalmente, el paquete de pruebas incluye una hoja de alerta temprana
+                                                en la parte inferior del paquete. Esta hoja contiene un círculo amarillo en su
+                                                centro, que cambia totalmente a marrón oscuro al ser evaluados equipos sin
+                                                problemas.
+                                                <br />
+                                                <br />
+                                                En el caso de equipos que evidencian una pérdida de la capacidad de remover
+                                                aire, este círculo amarillo cambiara parcialmente o no cambiara de color;
+                                                evidenciando que el equipo tiene una reducida capacidad de remover aire de
+                                                la cámara. Esta indicación permite establecer que en un futuro cercano, el
+                                                equipo debe ser sometido a inspección, mantención y/o reparación.
+                                            </p>
+                                            <br />
+                                            <div style="background: linear-gradient(0.3turn, #101D64, rgba(10,146,176,0.81)); color: white;" align="center">
+                                                <br />
+                                                <h3>PROPUESTA DE VALOR</h3>
+                                                <br />
+                                            </div>
+                                            <br />
+                                            <p>
+                                                Los paquetes de prueba Bowie & Dick Comply™ 00135 LF con hoja de
+                                                alerta temprana permiten determinar la idoneidad de uso inmediato del
+                                                equipo y simultáneamente, permiten entregar información predictiva del
+                                                comportamiento futuro de los Esterilizadores de vapor con sistemas de pre
+                                                vacío (Venturi o bomba de pre vacío)
+                                                <br />
+                                                <br />
+                                                El uso de Paquetes de Prueba Bowie & Dick para monitorear la remoción
+                                                de aire en esterilizadores a vapor, es parte fundamental de un adecuado
+                                                monitoreo de la esterilidad de cargas y forma parte de un portafolio integral
+                                                de soluciones para el monitoreo de la esterilidad de los productos.
+                                            </p>
+                                        </v-col>
+                                        <v-col cols="12" sm>
+                                            <div style="background: linear-gradient(0.3turn, #101D64, rgba(10,146,176,0.81)); color: white;" align="center">
+                                                <br />
+                                                <h3>CARACTERÍSTICAS, VENTAJAS Y BENEFICIOS</h3>
+                                                <br />
+                                            </div>
+                                            <br />
+                                            <h3 style="color: rgb(90,192,239)">Características:</h3>
+                                            <p>
+                                                El paquete de pruebas Bowie & Dick Comply™ 00135 LF; se encuentra
+                                                construido de hojas de papel, una capa de espuma reticulada, capas de
+                                                material impermeable, empacado en material desechable.
+                                                Cuenta con indicadores químicos Tipo 1 de exposición en el exterior del
+                                                producto y con hojas de prueba específicas para determinar la remoción de
+                                                aire y fallas futuras (Indicador Químico Tipo 2).
+                                            </p>
+                                            <br />
+                                            <h3 style="color: rgb(90,192,239)">Ventajas:</h3>
+                                            <p>
+                                                El monitoreo diario de los equipos esterilizadores de vapor con sistemas de
+                                                pre vacío (Venturi o bomba de pre vacío) y la capacidad de remover aire,
+                                                es fundamental en el funcionamiento de un equipo y del resultado de la
+                                                esterilización. Los paquetes de prueba Bowie & Dick Comply™ 00135LF,
+                                                permiten entregar el resultado de las pruebas de vacío y adicionalmente;
+                                                proveer información predictiva de potenciales fallas futuras en el sistema de
+                                                vacío.
+                                            </p>
+                                            <br />
+                                            <h3 style="color: rgb(90,192,239)">Beneficios:</h3>
+                                            <p>
+                                                El uso de paquetes de prueba Bowie & Dick Comply™ 00135 con hoja de
+                                                alerta temprana, permite detectar potenciales fallas futuras y de esta forma
+                                                ayudarle a planificar la mantención necesaria del equipo con antelación.
+                                                Esto le permite realizar una adecuada planificación de las cargas que debe
+                                                entregar de acuerdo a la Tabla Quirúrgica de su Hospital.
+                                                <br />
+                                                <br />
+                                                Los indicadores químicos utilizados son libres de plomo, lo que permite su
+                                                uso seguro para sus operadores
+                                            </p>
+                                        </v-col>
+                                        <v-col cols="12">
+                                            <div style="background: linear-gradient(0.3turn, #101D64, rgba(10,146,176,0.81)); color: white;" align="center">
+                                                <br />
+                                                <br />
+                                            </div>
+                                        </v-col>
+                                    </v-row>
+                                    <v-row>
+                                        <v-col cols="12" sm="6" md="6">
+                                            <div style="background: linear-gradient(0.3turn, #101D64, rgba(10,146,176,0.81)); color: white;" align="center">
+                                                <br />
+                                                <h3>RECOMENDACIÓN</h3>
+                                                <br />
+                                            </div>
+                                            <br />
+                                            <h3 style="color: rgb(90,192,239)">Racional:</h3>
+                                            <p>
+                                                La esterilización por vapor requiere el contacto del agente esterilizante (vapor)
+                                                con cada uno de los dispositivos o materiales a esterilizar, durante el tiempo
+                                                de contacto establecido en función de la temperatura de esterilización (e.g. 4
+                                                minutos @ 134ºC).
+                                                <br />
+                                                <br />
+                                                La presencia de aire dentro de la cámara, evita que el vapor se encuentre en
+                                                contacto con los dispositivos, reduciendo el tiempo de contacto y afectando
+                                                la esterilidad del ciclo.
+                                                <br />
+                                                <br />
+                                                La verificación de una adecuada remoción de aire es fundamental, toda
+                                                vez que el aire caliente no cuenta con la misma capacidad de esterilizar
+                                                dispositivos médicos al ser comparado con el vapor saturado
+                                            </p>
+                                            <br />
+                                            <h3 style="color: rgb(90,192,239)">Frecuencia:</h3>
+                                            <p>
+                                                Las pruebas de Bowie & Dick deben ser realizadas diariamente, de acuerdo a
+                                                recomendaciones AAMI, CSA, ISO y regulaciones locales; en todos los equipos
+                                                esterilizadores por pre vacío.
+                                            </p>
+                                        </v-col>
+                                        <v-col>
+                                            <h3 style="color: rgb(90,192,239)">Estándares de referencia:</h3>
+                                            <p>
+                                                i. AAMI St79:2010, 2011 & 2012 10.7.6.1: la Prueba de Bowie & Dick debe
+                                                ser realizada cada día que el esterilizador es utilizado, antes de una carga
+                                                con material a esterilizar. Un Indicador químico tipo 2 debe ser utilizado para
+                                                este proceso. Un ciclo reducido (ciclo sin fase de secado) deben ser realizado
+                                                antes de realizar la prueba. Si el esterilizador se utiliza de manera continua, la
+                                                prueba puede ser realizada a cualquier hora y debe ser realizada a la misma
+                                                hora todos los días.
+                                                <br />
+                                                <br />
+                                                ii. ISO 15882:2008 6.2. Indicadores tipo 2 “La penetración del vapor o prueba
+                                                de remoción de aire debe ser realizada en una cámara vacía. Las instrucciones
+                                                del fabricante deben ser seguidas durante el uso de este indicador”,
+                                                <br />
+                                                <br />
+                                                iii. CSA Z314.3-14 “Esterilización por vapor efectiva en instituciones de
+                                                salud”: 8.6.3.4.1: Para esterilizadores con sistemas de remoción dinámico de
+                                                aire, la prueba de vacío se debe realizar diariamente. Se requiere suficiente
+                                                vacío de aire para lograr penetración de vapor y que entre en contacto con la
+                                                superficie de los dispositivos. La prueba de remoción de aire está definida en
+                                                el estándar ISO 11140-5.
+                                            </p>
+                                        </v-col>
+                                        <v-col cols="12">
+                                            <v-img :src="ima22"></v-img>
+                                        </v-col>
+                                    </v-row>
+                                </div>
+                                <div v-show="card.show4">
+                                    <v-row>
+                                        <v-col>
+                                            <p>
+                                                Los Cartuchos de Gas de OE Steri-Gas™ de 3M™ son
+                                                cartuchos de un solo uso, que contienen 100% óxido de
+                                                etileno, para ser utilizados en los Esterilizadores Steri-Gas™
+                                                de 3M™ (esterilizadores de óxido de etileno). Al ser utilizado
+                                                en el Esterilizador Steri-Gas™ de 3M™ adecuado, el cartucho
+                                                emite la cantidad de óxido de etileno predeterminada
+                                                para cada ciclo de esterilización. Antes de iniciar un ciclo
+                                                de esterilización, un operador asegura un cartucho en el
+                                                puerto de cartuchos, ubicado en el interior de la cámara
+                                                del esterilizador. Se coloca la carga dentro de la cámara del
+                                                esterilizador; la puerta del esterilizador se cierra y se traba
+                                                automáticamente una vez iniciado el ciclo de esterilización.
+                                                Dentro de la cámara cerrada de esterilización, una vez
+                                                alcanzados los parámetros condicionados, el cartucho es
+                                                perforado en vacío y todo su contenido de óxido de etileno
+                                                es esparcido dentro de la cámara de esterilización.
+                                                <br />
+                                                <br />
+                                                Una vez completada la esterilización y la aireación, el
+                                                cartucho usado puede ser reciclado o desechado con
+                                                desechos no incinerables, de acuerdo a las políticas del
+                                                establecimiento.
+                                            </p>
+                                            <br />
+                                            <v-img :src="card.src" style="width: 100%"></v-img>
+                                        </v-col>
+                                        <v-col>
+                                            <p>
+                                                Los Cartuchos de Gas de OE Steri-Gas™ de 3M™ fueron
+                                                desarrollados y diseñados teniendo en mente la seguridad de
+                                                operadores y pacientes.
+                                            </p>
+                                            <p>
+                                                • Los cartuchos sólo contienen pequeñas cantidades de
+                                                óxido de etileno (peso neto nominal 100-170 grs)
+                                                <br />
+                                                <br />
+                                                • Los cartuchos entregan la cantidad justa de OE para cada
+                                                ciclo de esterilización. Los cartuchos son colocados dentro
+                                                de la cámara de esterilización y perforados sólo una vez que
+                                                la puerta de la cámara ha sido trabada, se haya producido
+                                                vacío dentro de la cámara, y los parámetros del proceso
+                                                hayan alcanzado los valores predeterminados.
+                                                <br />
+                                                <br />
+                                                • Los cartuchos permiten un proceso de esterilización
+                                                realizado totalmente en vacío. Si la integridad del sistema
+                                                se ve comprometida durante la exposición al gas OE,
+                                                entrará aire ambiental en la cámara. En este caso, el sistema
+                                                detectará un alza de presión y cancelará el ciclo si el sistema
+                                                no puede mantener el vacío. El sistema limpiará la cámara
+                                                del esterilizador con aire ambiental y lo evacuará a través
+                                                del sistema de ventilación del esterilizador
+                                                <br />
+                                                <br />
+                                                • Los cartuchos no contienen clorofluorcarburo ni ningún
+                                                otro diluyente prohibido e implicado en la destrucción de
+                                                la capa de ozono.
+                                                <br />
+                                                <br />
+                                                • Los cartuchos tienen un código de barra 2D escaneable,
+                                                individualizado para cada cartucho. El código de barra 2D
+                                                está encriptado con el número de catálogo de Cartuchos
+                                                de Gas de OE Steri-Gas™ de 3M™ , código de lote (fecha
+                                                de vencimiento) y peso nominal. El código de barra es
+                                                único para cada cartucho, reduciendo el riesgo de que se
+                                                use un cartucho equivocado en algún ciclo o esterilizador
+                                                determinado.
+                                                <br />
+                                                <br />
+                                                3M recomienda almacenar inventarios de más de 12
+                                                cartuchos llenos, en un gabinete para líquidos inflamables,
+                                                con ventilación hacia al exterior.
+                                            </p>
+                                        </v-col>
+                                    </v-row>
+                                    <v-row>
+                                        <v-col>
+                                            <h3>
+                                                Uso del Producto
+                                            </h3>
+                                            <p>
+                                                Los Cartuchos de Gas de OE Steri-Gas™ de 3M™ son utilizados como esterilizantes
+                                                en los Esterilizadores Steri-Vac™ de 3M, por personal capacitado en
+                                                establecimientos de cuidado de la salud, ciencias de la vida, y otros lugares para
+                                                la esterilización de productos y dispositivos médicos. Refiérase a la Tabla 1 para
+                                                determinar el Cartucho de Gas de OE Steri-Gas™ de 3M™ adecuado para cada tipo
+                                                de Esterilizador Steri-Vac™ de 3M™
+                                            </p>
+                                            <v-img :src="ima23" style="width: 100%"></v-img>
+                                            <h3>Status Regulatorio </h3>
+                                            <p>
+                                                Siempre consulte los requerimientos regulatorios nacional, regional y local,
+                                                antes de usar el número 75-21-B de la Chemical Abstract Society (CAS) para
+                                                el óxido de etileno al 100%. A continuación se indican las clasificaciones/
+                                                registros de los Cartuchos de Gas de OE Steri-Gas de 3M para varias
+                                                regiones globales.
+                                            </p>
+                                            <p>
+                                                • U.S. EPA Registro Number 7182-1
+                                                <br />
+                                                <br />
+                                                • Salud Canada Número de Identificación de Drogas de Canadá (DIN)
+                                                02154900
+                                                <br />
+                                                <br />
+                                                • Unión Europea registro REACH en Unión Europea (EU) como accesorio
+                                                a dispositivo médico; CE marcado como dispositivo médico Clase I 
+                                                (noestéril, no-medible) con registro REACH de la Unión Europea.
+                                                <br />
+                                                <br />
+                                                • Ministerio de Salud, Trabajo y Bienestar Japonés (MHLW)(Koselrodosho)
+                                                clasificado y regulado como farmacéutico.
+                                            </p>
+                                        </v-col>
+                                        <v-col>
+                                            <h3>Concentraciones de Rendimiento y Aplicación</h3>
+                                            <p>
+                                                La concentración de gas en la cámara se basa en el peso neto normal
+                                                de fabricación y el volumen interno de la cámara de la respectiva serie
+                                                de esterilizador. La Tabla 2 proporciona cálculos de concentraciones de
+                                                gas en una cámara vacía (mg/L) y el cálculo de los aumentos mínimos de
+                                                presión (mBar y kPa) para temperaturas de proceso entre 34 - 60°C para
+                                                cada modelo de Esterilizador Steri-Vac™
+                                                de 3M™ . El aumento mínimo de
+                                                presión calculado (mBar y kPa) es la presión mínima esperada basado en los
+                                                siguientes parámetros:
+                                                <br />
+                                                <br />
+                                                Alza estimada de presión a aproximadamente 70 segundos de iniciada la
+                                                etapa de inyección de OE.
+                                                <br />
+                                                <br />
+                                                Gama de temperaturas de proceso.
+                                                <br />
+                                                <br />
+                                                Volumen interno de la cámara del respectivo esterilizador
+                                            </p>
+                                            <br />
+                                            <v-img :src="ima24" style="width: 100%"></v-img>
+                                        </v-col>
+                                    </v-row>
+                                    <v-row>
+                                        <v-col>
+                                            <h3>Certificación de Pesos Netos por el Cliente</h3>
+                                            <p>
+                                                Los Cartuchos de Gas OE Steri-Gas™ de 3M™ están clasificados como Gas a Presión: Gas
+                                                Licuado1 Dentro del cilindro, estos gases existen en un balance o equilibrio líquidovapor. 
+                                                Inicialmente, el cilindro está casi lleno de líquido, y el gas llena el espacio sobre el
+                                                líquido. A medida que el gas es liberado del cilindro, se evapora suficiente líquido para
+                                                remplazarlo, manteniendo constante la presión dentro del cilindro. Los Cartuchos de
+                                                Gas OE Steri-Gas™ de 3M™ son cilindros con gases licuados, y pueden emitir a niveles
+                                                muy bajos; sin embargo, si son almacenados de acuerdo a las recomendaciones de 3M,
+                                                cumplen o exceden los requerimientos de seguridad ocupacional. En su fabricación,
+                                                los Cartuchos de Gas OE Steri-Gas™ de 3M™ son certificados y liberados con su peso
+                                                nominal neto. En el establecimiento del cliente y durante su vida útil, los Cartuchos de
+                                                Gas OE Steri-Gas™ de 3M™ están certificados en sus pesos netos, según se indica en la
+                                                Tabla 3.
+                                            </p>
+                                            <v-img :src="ima25" style="width: 100%"></v-img>
+                                        </v-col>
+                                    </v-row>
+                                </div>
+                            </v-card-text>
+                            <v-divider></v-divider>
+                            <br />
+                            <v-btn
+                                color="blue-darken-1"
+                                variant="text"
+                                to="/#formulario"
+                            >
+                                MÁS INFORMACION
+                            </v-btn>
+                            <br />
+                        </v-card>
+                    </dibox>
+        </div>
+        <dibox scrollable v-show="model1" @close="hideDialog1()" v-if="activador">
+                            <v-card>
+                                <div class="d-flex justify-space-between">
+                                    <v-card-title class="d-flex justify-end">
+                                        LISTA DE PRODUCTOS
+                                    </v-card-title>
+                                    <v-card-actions class="d-flex justify-start">
+                                        <v-btn
+                                            style="color: rgb(203, 50, 52)"
+                                            variant="text"
+                                            @click="hideDialog1()"
+                                        >
+                                            <h1>X</h1>
+                                        </v-btn>
+                                    </v-card-actions>
+                                </div>
+                                <v-divider></v-divider>
+                                <v-card-text class="text-pre-wrap">
+                                <v-row>
+                                    <v-col cols="12" sm="12" md="12">
+                                        <p style="color: #083545">
+                                            ESPARADRAPO HIPOALERGÉNICO DE TELA 2.5 cm X 9.1 m - CAJA X 12 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE PAPEL 2.5 cm X 9.1 m - CAJA X 12 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO ANTIALÉRGICO PLASTIFICADO 2.5 cm X 9.1 m - CAJA X 12 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE TELA 5 cm X 9.1 m - CAJA X 06 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE PAPEL 5 cm X 9.1 m - CAJA X 06 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO ANTIALÉRGICO PLASTIFICADO 5 cm X 9.1 m - CAJA X 06 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE TELA 7.5 cm X 9.1 m - CAJA X 04 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE PAPEL 7.5 cm X 9.1 m - CAJA X 04 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO ANTIALÉRGICO PLASTIFICADO 7.5 cm X 9.1 m - CAJA X 04 ROLLOS.
+                                            <br />
+                                            <br />
+                                            ESPARADRAPO HIPOALERGÉNICO DE TELA - CAJA X 08 ROLLOS (04 rollos de 2.5 cm X 9.1 m y 04 rollos de 5 cm X 9.1 m).
+                                            <br />
+                                            <br />
+                                            PROTECTOR CUTANEO HEXAMETILDISILOXANO+TERPOLIMERO ACRILATO+POLIFENILMETILSILOXANO AEROSOL 28 mL - FRASCO.
+                                            <br />
+                                            <br />
+                                            PROTECTOR CUTANEO HEXAMETILDISILOXANO+TERPOLIMERO ACRILATO+POLIFENILMETILSILOXANO X 1 mL.
+                                            <br />
+                                            <br />
+                                            APOSITO TRANSPARENTE ADHESIVO 4.4 cm X 4.4 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APOSITO TRANSPARENTE ADHESIVO 6 cm X 7 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APOSITO TRANSPARENTE ADHESIVO 10 cm X 12 cm - CAJA X 50 UND.	
+                                            <br />
+                                            <br />
+                                            APOSITO TRANSPARENTE ADHESIVO 15 cm X 20 cm - CAJA X 10 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON GLUCONATO DE CLORHEXIDINA 7 cm X 8.5 cm - CAJA X 25 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON GLUCONATO DE CLORHEXIDINA 8.5 cm X 11.5 cm - CAJA X 25 UND. - CAJA X 25 SACHETS.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 3.8 cm X 4.5 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 7 cm X 8 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 5 cm X 5.7 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 6.5 cm X 7 cm - CAJA X 100 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 8.5 cm X 11.5 cm - CAJA X 50 UND.
+                                            <br />
+                                            <br />
+                                            APÓSITO TRANSPARENTE CON BORDE REFORZADO 10 cm X 12 cm - CAJA X 50 UND.
+                                            <br />
+                                            <br />
+                                            MANTA TÉRMICA PARA CUERPO ENTERO 91 cm X 2.13 m APROX.
+                                            <br />
+                                            <br />
+                                            MANTA TERMICA PEDIATRICA 91 cm X 1.52 m.
+                                            <br />
+                                            <br />
+                                            MANTA TÉRMICA PARA EXTREMIDADES INFERIORES 91 cm X 1.52 m APROX.
+                                            <br />
+                                            <br />
+                                            MANTA TERMICA PEDIATRICA 1.52 m X 81 cm.
+                                            <br />
+                                            <br />
+                                            MANTA TERMICA PEDIATRICA 91 cm X 84 cm.
+                                            <br />
+                                            <br />
+                                            MANTA TÉRMICA PARA EXTREMIDADES SUPERIORES 61 cm X 1.98 m
+                                            <br />
+                                            <br />
+                                            MANTA TÉRMICA DE CUERPO ENTERO 91 cm X 2.21 m.
+                                            <br />
+                                            <br />
+                                            RESPIRADOR QUIRURGICO TIPO N95.
+                                        </p>
+                                    </v-col>
+                                </v-row>
+                                </v-card-text>
+                            </v-card>
+        </dibox>
     </div>
 </template>
 <script>
