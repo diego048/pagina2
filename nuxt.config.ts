@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         pageTransition: { name: 'page', mode: 'out-in' },
         head: {
             charset: 'utf-16',
-            viewport: 'width=500, initial-scale=1',
+            viewport: 'width=50, initial-scale=1',
             title: 'RSpharma',
             meta: [
               { name: 'description', content: 'a' }
