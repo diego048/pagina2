@@ -1,6 +1,5 @@
 <template>
     <div>
-      <v-lazy v-model="active" :options="{ threshold: .5 }">
         <div id="background">
             <br />
             <br />
@@ -180,7 +179,6 @@
             </v-container>
         </div>
         <br />
-        </v-lazy>
     </div>
 </template>
 <style scoped>
