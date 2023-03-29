@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="activador">
         <div id="background">
             <br />
             <br />
