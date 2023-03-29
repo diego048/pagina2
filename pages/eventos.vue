@@ -1,5 +1,6 @@
 <template>
     <div>
+      <v-lazy v-model="active" :options="{ threshold: .5 }">
         <div id="background">
             <br />
             <br />
@@ -179,6 +180,7 @@
             </v-container>
         </div>
         <br />
+        </v-lazy>
     </div>
 </template>
 <style scoped>
@@ -237,6 +239,7 @@ export default {
     },
     data() {
         return {
+            active: false,
             cards: [imag1, imag2, imag3, imag4, imag5, imag6, imag7, imag8],
             cards1: [imag9, imag10, imag11, imag12, imag13, imag14, imag15, imag16],
             activador: false,
