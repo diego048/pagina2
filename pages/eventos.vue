@@ -44,12 +44,18 @@
                     <v-col cols="12" sm="6" md="6" style="position: relative" v-scrolls class="align-self-center">
                         <div id="circle4" style="bottom: 100px" class="d-none d-sm-flex"></div>
                         <div id="circle4" style="right: 0; top: 100px"></div>
-                        <h2 style="color: #1A2A33" align="center">Lorem ipsum</h2>
+                        <h2 style="color: #1A2A33" align="center">Capacitación en el manejo de los equipos y mantas Bair Hugger</h2>
+                        <br />
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate
+                        Algunas de nuestras fotos son:
+                        -	Sala de Operaciones del Instituto Nacional de Enfermedades Neoplásicas (INEN) – Reunión con médicos residentes Anestesiólogos
+                            <br />
+                            <br />
+                        -	Capacitación a Licenciados de la Unidad de Cuidados Intensivos (UCI) y del Servicio de Hemodiálisis del Hospital Naval.
+                            <br />
+                            <br />
+                        -	Capacitación a Licenciados de la Unidad de Cuidados Intensivos (UCI) y del Servicio de Hemodiálisis del Hospital Naval.
+
                         </p>
                     </v-col>
                     <v-col cols="12" sm="6" md="6" class="d-flex d-sm-none" v-scrolls v-if="activador">
@@ -111,12 +117,11 @@
                     <v-col cols="12" sm="6" md="6" style="position: relative" v-scrolls class="align-self-center">
                         <div id="circle4" style="right: 0; bottom: 100px; background: rgba(255, 255, 255, 0.4);" class="d-none d-sm-flex"></div>
                         <div id="circle4" style="left: 0; top: 100px; background: rgba(255, 255, 255, 0.5);"></div>
-                        <h2 style="color: #1A2A33" align="center">Lorem ipsum</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate
+                            - Sala de Operaciones del Instituto Nacional de Enfermedades Neoplásicas (INEN) – Reunión con médicos residentes anestesiólogos
+                            <br />
+                            <br />
+                            -Sala de Operaciones del Instituto Nacional de Enfermedades Neoplásicas (INEN) – Reunión con Licenciadas del Centro Quirúrgico
                         </p>
                     </v-col>
                     <v-col cols="12" sm="6" md="6" v-scrolls>
