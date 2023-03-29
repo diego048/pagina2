@@ -1,7 +1,7 @@
 <template>
-    <v-app :lazy="true">
+    <div>
         <navigation />
         <slot />
         <pie />
-    </v-app>
+    </div>
 </template>
