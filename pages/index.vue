@@ -19,19 +19,19 @@
                 </v-container>
             </div>
             <v-carousel-item
-                :src="ima12"
+                src="/imag/imagen18.jpg"
                 style="filter: brightness(50%)"
                 cover
             ></v-carousel-item>
 
             <v-carousel-item
-                :src="ima13"
+                src="/imag/imagen22.jpg"
                 style="filter: brightness(50%)"
                 cover
             ></v-carousel-item>
 
             <v-carousel-item
-                :src="ima14"
+                src="/imag/imagen23.jpg"
                 style="filter: brightness(50%)"
                 cover
             ></v-carousel-item>
@@ -49,14 +49,14 @@
                             <v-col cols="6">
                                 <v-img
                                     height="150"
-                                    :src="ima4"
+                                    src="/imag/imagen4.png"
                                     cover
                                 ></v-img>
                             </v-col>
                             <v-col cols="6">
                                 <v-img
                                     height="150"
-                                    :src="ima5"
+                                    src="/imag/imagen5.png"
                                     cover
                                 ></v-img>
                             </v-col>
@@ -64,7 +64,7 @@
                         <br />
                         <v-img
                             height="200"
-                            :src="ima6"
+                            src="/imag/imagen6.png"
                             cover
                         ></v-img>
                     </v-col>
@@ -167,7 +167,7 @@
                     <v-col cols="12" sm="6" md="6">
                         <v-img
                             height="300"
-                            :src="ima7"
+                            src="/imag/imagen13.jpg"
                             cover
                         ></v-img>
                     </v-col>
@@ -231,7 +231,7 @@
                                             <v-col cols="12" sm="6" md="6">
                                                 <v-carousel show-arrows="hover" hide-delimiters>
                                                     <v-carousel-item
-                                                        :src="ima10"
+                                                        src="/imag/imagen62.png"
                                                     ></v-carousel-item>
 
                                                     <v-carousel-item
@@ -615,7 +615,7 @@
                                                 </p>
                                             </v-col>
                                         </v-row>
-                                        <v-img :src="ima11" style="width: 100%"></v-img>
+                                        <v-img src="/imag/imagen61.png" style="width: 100%"></v-img>
                                     </div>
                                 </div>
                         </LazyDibox>
@@ -623,22 +623,6 @@
     </div>
 </template>
 <script>
-import imag1 from "../assets/imagen70.png";
-import imag2 from "../assets/imagen2.png";
-import imag3 from "../assets/imagen3.png";
-import imag4 from "../assets/imagen4.png";
-import imag5 from "../assets/imagen5.png";
-import imag6 from "../assets/imagen6.png";
-import imag7 from "../assets/imagen7.png";
-import imag8 from "../assets/imagen8.png";
-import imag9 from "../assets/imagen9.png";
-import imag10 from "../assets/imagen13.jpg"
-import imag11 from "../assets/imagen71.png";
-import imag12 from "../assets/imagen72.png";
-import imag13 from "../assets/imagen62.png"
-import imag14 from "../assets/imagen61.png"
-import imag15 from "../assets/imagen18.jpg"
-import imag16 from "../assets/imagen22.jpg"
 import imag17 from "../assets/imagen23.jpg"
 export default {
     unmounted(){
@@ -672,20 +656,6 @@ export default {
     data() {
       return {
         activador: false,
-        ima1: imag1,
-        ima2: imag2,
-        ima3: imag3,
-        ima4: imag4,
-        ima5: imag5,
-        ima6: imag6,
-        ima7: imag10,
-        ima8: imag11,
-        ima9: imag12,
-        ima10: imag13,
-        ima11: imag14,
-        ima12: imag15,
-        ima13: imag16,
-        ima14: imag17,
         cards: [
             {
                 id: 1, 
@@ -695,7 +665,7 @@ export default {
                 info: "Cinta quirúrgica de polietileno de baja densidad, transparente, macroperforada, libre de latex.....", 
                 show1: true,
                 show: false, 
-                src: imag7,
+                src: "/imag/imagen7.png",
             },
             {
                 id: 2, 
@@ -705,7 +675,7 @@ export default {
                 info: "Cinta quirúrgica de rayón no tejida, microporosa, libre de latex e hipoalergénica......", 
                 show2: true,
                 show: false, 
-                src: imag8,
+                src: "/imag/imagen8.png",
             },
             {
                 id: 3, 
@@ -715,7 +685,7 @@ export default {
                 info: "Es una versátil solución para ayudar a prevenir el daño de la piel antes que suceda.", 
                 show3: true,
                 show: false, 
-                src: imag9,
+                src: "/imag/imagen9.png",
             },
         ],
         items9: [
