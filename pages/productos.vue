@@ -1,5 +1,5 @@
 <template>
-    <div v-if="activador">
+    <div>
         <div id="background">
             <br />
             <br />
@@ -96,7 +96,7 @@
         </v-container>
         
         <div v-for="card in cards" :key="card.id">
-            <dibox v-show="card.show" @close="hideDialog(card)">
+            <LazyDibox v-show="card.show" @close="hideDialog(card)">
                         
                         <v-card>
                             <div class="d-flex justify-space-between text-pre-wrap">
@@ -995,7 +995,7 @@
                             </v-btn>
                             <br />
                         </v-card>
-            </dibox>
+            </LazyDibox>
         </div>
         <div v-for="card in cards1" :key="card.id">
             <dibox v-if="card.show" @close="hideDialog(card)">
