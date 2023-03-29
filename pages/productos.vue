@@ -169,7 +169,7 @@ export default {
         document.body.style.overflowY = '';
         window.scrollTo(0, this.scrollPosition);
     },
-        hideDialog1(card) {
+        hideDialog1() {
         this.model1 = false;
         document.body.style.position = 'static';
         document.body.style.top = '';
