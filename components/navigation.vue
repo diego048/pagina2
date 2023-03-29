@@ -48,7 +48,7 @@
             </v-app-bar-title>
           </div>
           <v-spacer></v-spacer>
-          <div v-show="!mobile">
+          <div v-show="!mobile" class="d-none d-sm-flex">
             <v-btn class="link" to="/">
               HOME
             </v-btn>
