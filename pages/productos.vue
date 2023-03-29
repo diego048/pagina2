@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="activador">
         <div id="background">
             <br />
             <br />
@@ -1587,9 +1587,8 @@ import ima34 from "../assets/imagen81.jpg"
 import ima35 from "../assets/imagen82.jpg"
 import ima36 from "../assets/imagen83.jpg"
 export default {
-    beforeMount(){
-      this.activador = true
-    },
+    mounted(){
+    this.activador = true},
           unmounted(){
     document.body.style.position = 'static';
         document.body.style.top = '';
