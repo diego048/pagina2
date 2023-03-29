@@ -1,6 +1,5 @@
 <template>
     <div>
-      <v-lazy v-model="active" :options="{ threshold: .5 }">
         <div id="background">
             <br />
             <br />
@@ -1548,7 +1547,6 @@
                                 </v-card-text>
                             </v-card>
         </dibox>
-        </v-lazy>
     </div>
 </template>
 <script>
