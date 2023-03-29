@@ -114,7 +114,7 @@
         </div>
         <v-img
             height="200px"
-            src="/imagen1.png"
+            :src="p1"
         ></v-img>
     </div>
 </template>
@@ -128,6 +128,7 @@ export default {
             ima1: imag1,
             ima2: imag2,
             ima3: imag3,
+            p1: "/imagen1.png",
         }
     }
 }
