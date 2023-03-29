@@ -48,6 +48,7 @@
                         <br />
                         <p>
                         Algunas de nuestras fotos son:
+                            <br />
                         -	Sala de Operaciones del Instituto Nacional de Enfermedades Neoplásicas (INEN) – Reunión con médicos residentes Anestesiólogos
                             <br />
                             <br />
