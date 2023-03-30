@@ -623,7 +623,6 @@
     </div>
 </template>
 <script>
-import imag17 from "../assets/imagen23.jpg"
 export default {
     unmounted(){
         document.body.style.position = 'static';
