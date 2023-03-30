@@ -171,7 +171,7 @@
                                             <v-img src="/imag/imagen68.png" style="width: 100%"></v-img>
                                         </v-col>
                                         <v-col cols="12" sm="6" md="6">
-                                            <v-img :src="/imag/imagen69.png" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen69.png" style="width: 100%"></v-img>
                                         </v-col>
                                     </v-row>
                                 </div>
