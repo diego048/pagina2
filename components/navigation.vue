@@ -4,7 +4,7 @@
         <v-navigation-drawer v-model="drawer" app>
         <v-img
           class="mx-2"
-          :src="p1"
+          src="/imag/imagen37.png"
           contain
         ></v-img>
         <v-list density="compact" nav>
@@ -76,11 +76,9 @@
     </div>
   </template>
   <script>
-  import ima1 from "../assets/imagen37.png";
   export default {
     data() {
       return {
-        p1: ima1,
         drawer: false,
         mobile: null,
         windowwith: null,
