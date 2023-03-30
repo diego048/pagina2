@@ -40,7 +40,7 @@
                 <NuxtLink class="link" to="/">
                   <v-img
                     class="mx-2"
-                    :src="/imag/imagen37.png"
+                    src="/imag/imagen37.png"
                     style="width: 90%"
                     contain
                   ></v-img>
