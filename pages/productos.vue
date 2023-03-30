@@ -1241,7 +1241,7 @@
                                             </p>
                                         </v-col>
                                         <v-col cols="12">
-                                            <v-img :src="/imag/imagen80.jpg"></v-img>
+                                            <v-img src="/imag/imagen80.jpg"></v-img>
                                         </v-col>
                                     </v-row>
                                 </div>
