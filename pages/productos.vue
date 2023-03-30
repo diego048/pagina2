@@ -2,7 +2,7 @@
     <div>
         <div id="background">
             <br />
-            <br />
+            <br /
             <br />
             <v-container>
                 <v-row>
@@ -147,7 +147,7 @@
                                             <v-img src="/imag/imagen66.png" style="width: 100%"></v-img>
                                         </v-col>
                                         <v-col cols="12" sm="12" md="12">
-                                            <v-img :src="/imag/imagen67.png" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen67.png" style="width: 100%"></v-img>
                                         </v-col>
                                     </v-row>
                                     <v-row>
