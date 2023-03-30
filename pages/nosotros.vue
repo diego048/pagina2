@@ -191,7 +191,7 @@
 }
 #background1 {
     background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)),
-      url("../assets/imagen76.jpeg");
+      url("../imag/imagen76.jpeg");
     background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: cover;
