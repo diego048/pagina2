@@ -2,7 +2,7 @@
     <div>
         <div id="background">
             <br />
-            <br /
+            <br />
             <br />
             <v-container>
                 <v-row>
