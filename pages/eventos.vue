@@ -29,7 +29,7 @@
                                     ></v-carousel-item>
 
                                     <v-carousel-item
-                                        src"/imag/imagen31.jpg"
+                                        src="/imag/imagen31.jpg"
                                         cover
                                     ></v-carousel-item>
 
