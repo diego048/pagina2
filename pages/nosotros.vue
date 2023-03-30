@@ -18,7 +18,7 @@
                         <br />
                         <v-img
                             height="200px"
-                            :src="ima2"
+                            src="/imag/imagen35.png"
                         ></v-img>
                     </v-col>
                     <v-col cols="12" sm="6" md="6" style="position: relative" v-scrolls>
@@ -112,27 +112,8 @@
                 </v-row>
             </v-container>
         </div>
-        <v-img
-            height="200px"
-            :src="p1"
-        ></v-img>
     </div>
 </template>
-<script>
-import imag1 from "../assets/imagen33.png";
-import imag2 from "../assets/imagen35.png";
-import imag3 from "../assets/imagen76.jpeg";
-export default {
-    data() {
-        return {
-            ima1: imag1,
-            ima2: imag2,
-            ima3: imag3,
-            p1: "/imagen1.png",
-        }
-    }
-}
-</script>
 <style scoped>
 .before-enter {
     opacity: 0;
