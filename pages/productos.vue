@@ -1914,7 +1914,7 @@ export default {
 </script>
 <style scoped>
 #background {
-  background: url("../assets/imagen36.png");
+  background: url("/imag/imagen36.png");
   background-position: 50% 65%;
   background-repeat: no-repeat;
   background-size: cover;
