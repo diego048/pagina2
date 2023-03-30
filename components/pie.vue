@@ -32,7 +32,7 @@
                         <v-img
                             
                             height="150px"
-                            :src="ima1"
+                            src="/imag/imagen35-.png"
                         ></v-img>
                     </div>
                 </v-col>
@@ -41,11 +41,9 @@
     </div>
 </template>
 <script>
-import imag1 from "../assets/imagen35-.png";
 export default {
     data() {
         return {
-            ima1: imag1,
         }
     }
 }
