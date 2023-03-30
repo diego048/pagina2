@@ -183,7 +183,7 @@
 </template>
 <style scoped>
 #background {
-  background: url("../assets/imagen49.png");
+  background: url("/imag/imagen49.png");
   background-position: 50% 30%;
   background-repeat: no-repeat;
   background-size: cover;
