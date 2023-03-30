@@ -120,13 +120,13 @@
                                 <div v-if="card.show1">
                                     <v-row>
                                         <v-col cols="12" sm="6" md="6">
-                                            <v-img :src="ima14" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen63.png" style="width: 100%"></v-img>
                                         </v-col>
                                         <v-col cols="12" sm="6" md="6">
-                                            <v-img :src="ima15" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen64.png" style="width: 100%"></v-img>
                                         </v-col>
                                         <v-col cols="12">
-                                            <v-img :src="ima16" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen65.png" style="width: 100%"></v-img>
                                         </v-col>
                                     </v-row>
                                     <v-row>
@@ -144,10 +144,10 @@
                                             </p>
                                         </v-col>
                                         <v-col cols="12" sm="6" md="6">
-                                            <v-img :src="ima17" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen66.png" style="width: 100%"></v-img>
                                         </v-col>
                                         <v-col cols="12" sm="12" md="12">
-                                            <v-img :src="ima18" style="width: 100%"></v-img>
+                                            <v-img :src="/imag/imagen67.png" style="width: 100%"></v-img>
                                         </v-col>
                                     </v-row>
                                     <v-row>
@@ -168,10 +168,10 @@
                                             </p>
                                         </v-col>
                                         <v-col cols="12" sm="6" md="6" class="align-self-center">
-                                            <v-img :src="ima19" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen68.png" style="width: 100%"></v-img>
                                         </v-col>
                                         <v-col cols="12" sm="6" md="6">
-                                            <v-img :src="ima20" style="width: 100%"></v-img>
+                                            <v-img :src="/imag/imagen69.png" style="width: 100%"></v-img>
                                         </v-col>
                                     </v-row>
                                 </div>
@@ -319,7 +319,7 @@
                                         <v-col cols="12" sm="6" md="6">
                                             <v-carousel show-arrows="hover" hide-delimiters>
                                                 <v-carousel-item
-                                                    :src="ima13"
+                                                    src="/imag/imagen62.png"
                                                 ></v-carousel-item>
 
                                                 <v-carousel-item
@@ -703,7 +703,7 @@
                                             </p>
                                         </v-col>
                                     </v-row>
-                                    <v-img :src="ima12" style="width: 100%"></v-img>
+                                    <v-img src="/imag/imagen61.png" style="width: 100%"></v-img>
                                 </div>
                                 <div v-if="card.show6">
                                     <v-row>
@@ -733,26 +733,26 @@
                                             <h2>Mantas bajo paciente</h2>
                                             <v-row>
                                                 <v-col>
-                                                    <v-img :src="ima3" style="width: 100%"></v-img>
+                                                    <v-img src="/imag/imagen52.png" style="width: 100%"></v-img>
                                                 </v-col>
                                                 <v-col>
-                                                    <v-img :src="ima4" style="width: 100%"></v-img>
+                                                    <v-img src="/imag/imagen53.png" style="width: 100%"></v-img>
                                                 </v-col>
                                                 <v-col>
-                                                    <v-img :src="ima5" style="width: 100%"></v-img>
+                                                    <v-img src="/imag/imagen54.png" style="width: 100%"></v-img>
                                                 </v-col>
                                             </v-row>
                                             <h2>Mantas intraoperatorias</h2>
                                             <v-row>
                                                 <v-col>
-                                                    <v-img :src="ima6" style="width: 100%"></v-img>
+                                                    <v-img src="/imag/imagen55.png" style="width: 100%"></v-img>
                                                 </v-col>
                                                 <v-col>
-                                                    <v-img :src="ima7" style="width: 100%"></v-img>
+                                                    <v-img src="/imag/imagen56.png" style="width: 100%"></v-img>
                                                 </v-col>
                                             </v-row>
                                             <h2>Mantas para postoperatorio</h2>
-                                            <v-img :src="ima8" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen57.png" style="width: 100%"></v-img>
                                         </v-col>
                                         <v-col cols="12" sm="6" md="6">
                                             <h3>
@@ -772,13 +772,13 @@
                                             <br />
                                             <v-row>
                                                 <v-col cols="6" sm="6" md="6">
-                                                    <v-img :src="ima9" style="width: 100%"></v-img>
+                                                    <v-img src="/imag/imagen58.png" style="width: 100%"></v-img>
                                                 </v-col>
                                                 <v-col cols="6" sm="6" md="6">
-                                                    <v-img :src="ima10" style="width: 100%"></v-img>
+                                                    <v-img src="/imag/imagen59.png" style="width: 100%"></v-img>
                                                 </v-col>
                                                 <v-col cols="6" sm="12" md="12">
-                                                    <v-img :src="ima11" style="width: 100%"></v-img>
+                                                    <v-img src="/imag/imagen60.png" style="width: 100%"></v-img>
                                                 </v-col>
                                                 <v-col cols="6" sm="12" md="12">
                                                     <v-img :src="card.src" style="width: 100%"></v-img>
@@ -968,7 +968,7 @@
                                         <v-col cols="12" sm="12" md="6">
                                             <v-carousel show-arrows="hover" hide-delimiters>
                                                 <v-carousel-item
-                                                    :src="ima1"
+                                                    src="/imag/imagen50.png"
                                                 ></v-carousel-item>
 
                                                 <v-carousel-item
@@ -976,7 +976,7 @@
                                                 ></v-carousel-item>
 
                                                 <v-carousel-item
-                                                    :src="ima2"                                                    
+                                                    src="/imag/imagen51.png"                                               
                                                 ></v-carousel-item>
                                             </v-carousel>
                                         </v-col>
@@ -1241,7 +1241,7 @@
                                             </p>
                                         </v-col>
                                         <v-col cols="12">
-                                            <v-img :src="ima22"></v-img>
+                                            <v-img :src="/imag/imagen80.jpg"></v-img>
                                         </v-col>
                                     </v-row>
                                 </div>
@@ -1338,7 +1338,7 @@
                                                 determinar el Cartucho de Gas de OE Steri-Gas™ de 3M™ adecuado para cada tipo
                                                 de Esterilizador Steri-Vac™ de 3M™
                                             </p>
-                                            <v-img :src="ima23" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen81.jpg" style="width: 100%"></v-img>
                                             <h3>Status Regulatorio </h3>
                                             <p>
                                                 Siempre consulte los requerimientos regulatorios nacional, regional y local,
@@ -1388,7 +1388,7 @@
                                                 Volumen interno de la cámara del respectivo esterilizador
                                             </p>
                                             <br />
-                                            <v-img :src="ima24" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen82.jpg" style="width: 100%"></v-img>
                                         </v-col>
                                     </v-row>
                                     <v-row>
@@ -1408,7 +1408,7 @@
                                                 Gas OE Steri-Gas™ de 3M™ están certificados en sus pesos netos, según se indica en la
                                                 Tabla 3.
                                             </p>
-                                            <v-img :src="ima25" style="width: 100%"></v-img>
+                                            <v-img src="/imag/imagen83.jpg" style="width: 100%"></v-img>
                                         </v-col>
                                     </v-row>
                                 </div>
@@ -1550,42 +1550,6 @@
     </div>
 </template>
 <script>
-import ima1 from "../assets/imagen38.png"
-import ima2 from "../assets/imagen39.png"
-import ima3 from "../assets/imagen40.png"
-import ima4 from "../assets/imagen41.png"
-import ima5 from "../assets/imagen42.png"
-import ima6 from "../assets/imagen43.png"
-import ima7 from "../assets/imagen77.png"
-import ima8 from "../assets/imagen75.png"
-import ima9 from "../assets/imagen78.png"
-import ima10 from "../assets/imagen47.png"
-import ima11 from "../assets/imagen48.png"
-import ima12 from "../assets/imagen50.png"
-import ima13 from "../assets/imagen51.png"
-import ima14 from "../assets/imagen52.png"
-import ima15 from "../assets/imagen53.png"
-import ima16 from "../assets/imagen54.png"
-import ima17 from "../assets/imagen55.png"
-import ima18 from "../assets/imagen56.png"
-import ima19 from "../assets/imagen57.png"
-import ima20 from "../assets/imagen58.png"
-import ima21 from "../assets/imagen59.png"
-import ima22 from "../assets/imagen60.png"
-import ima23 from "../assets/imagen61.png"
-import ima24 from "../assets/imagen62.png"
-import ima25 from "../assets/imagen63.png"
-import ima26 from "../assets/imagen64.png"
-import ima27 from "../assets/imagen65.png"
-import ima28 from "../assets/imagen66.png"
-import ima29 from "../assets/imagen67.png"
-import ima30 from "../assets/imagen68.png"
-import ima31 from "../assets/imagen69.png"
-import ima32 from "../assets/imagen79.png"
-import ima33 from "../assets/imagen80.jpg"
-import ima34 from "../assets/imagen81.jpg"
-import ima35 from "../assets/imagen82.jpg"
-import ima36 from "../assets/imagen83.jpg"
 export default {
     mounted(){
     this.activador = true},
@@ -1635,31 +1599,6 @@ export default {
         active: false,
         activador: false,
         model1: false,
-        ima1: ima12,
-        ima2: ima13,
-        ima3: ima14,
-        ima4: ima15,
-        ima5: ima16,
-        ima6: ima17,
-        ima7: ima18,
-        ima8: ima19,
-        ima9: ima20,
-        ima10: ima21,
-        ima11: ima22,
-        ima12: ima23,
-        ima13: ima24,
-        ima14: ima25,
-        ima15: ima26,
-        ima16: ima27,
-        ima17: ima28,
-        ima18: ima29,
-        ima19: ima30,
-        ima20: ima31,
-        ima21: ima32,
-        ima22: ima33,
-        ima23: ima34,
-        ima24: ima35,
-        ima25: ima36,
         items: [
         { title: "Fraguado extra rápido."},
         { title: "Vendaje de acabado liso, sin grumos."},
@@ -1818,7 +1757,7 @@ export default {
                 info: "El único apósito transparente que se ha comprobado que reduce CRBSI", 
                 show1: true,
                 show: false, 
-                src: ima1, 
+                src: "/imag/imagen38.png", 
             },
             {
                 id: 2, 
@@ -1828,7 +1767,7 @@ export default {
                 info: "Cinta quirúrgica tipo seda de tafetán tejido, libre de latex e hipoalergénica", 
                 show: false, 
                 show2: true,
-                src: ima2,
+                src: "/imag/imagen39.png",
             },
             {
                 id: 3, 
@@ -1838,7 +1777,7 @@ export default {
                 info: "Cinta quirúrgica de polietileno de baja densidad, transparente, macroperforada", 
                 show: false,
                 show3: true,
-                src: ima3,
+                src: "/imag/imagen40.png",
             },
             {
                 id: 4, 
@@ -1848,7 +1787,7 @@ export default {
                 info: "Cinta quirúrgica de rayón no tejida, microporosa, libre de latex e hipoalergénica", 
                 show: false, 
                 show4: true,
-                src: ima4 
+                src: "/imag/imagen41.png" 
             },
             {
                 id: 5, 
@@ -1858,7 +1797,7 @@ export default {
                 info: "Es una versátil solución para ayudar a prevenir el daño de la piel antes que suceda", 
                 show: false, 
                 show5: true,
-                src: ima5
+                src: "/imag/imagen42.png"
             },
             {
                 id: 6, 
@@ -1868,7 +1807,7 @@ export default {
                 info: "Los pacientes anestesiados no pueden regular su temperatura", 
                 show: false, 
                 show6: true,
-                src: ima6, 
+                src: "/imag/imagen43.png", 
             },
             {
                 id: 7, 
@@ -1878,7 +1817,7 @@ export default {
                 info: "n95 con calificación aprobada por NIOSH", 
                 show: false, 
                 show7: true,
-                src: ima7
+                src: "/imag/imagen77.png"
             },
             {
                 id: 8, 
@@ -1888,7 +1827,7 @@ export default {
                 info: "Esto ha sido diseñado especialmente para proteger contra material particular", 
                 show: false,
                 show8: true,
-                src: ima8,
+                src: "/imag/imagen75.png",
             },
             {
                 id: 9, 
@@ -1898,7 +1837,7 @@ export default {
                 info: "Vendaje con ungüento no medicado, estéril", 
                 show: false, 
                 show9: true,
-                src: ima9
+                src: "/imag/imagen78.png"
             },
         ],
         cards1: [
@@ -1910,7 +1849,7 @@ export default {
                 info: "En diferentes tamaños", 
                 show: false, 
                 show1: true,
-                src: ima10,
+                src: "/imag/imagen47.png",
             },
             {
                 id: 2, 
@@ -1920,7 +1859,7 @@ export default {
                 info: "En diferentes tamaños", 
                 show: false, 
                 show2: true,
-                src: ima11,
+                src: "/imag/imagen48.png",
             },
             {
                 id: 3, 
@@ -1930,7 +1869,7 @@ export default {
                 info: "más info", 
                 show: false, 
                 show3: true,
-                src: ima32,
+                src: "/imag/imagen79.png",
             },
             {
                 id: 4, 
@@ -1940,7 +1879,7 @@ export default {
                 info: "más info", 
                 show: false, 
                 show4: true,
-                src: ima9,
+                src: "/imag/imagen58.png",
             },
         ],
         cards2: [
